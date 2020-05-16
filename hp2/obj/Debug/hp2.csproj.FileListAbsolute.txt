@@ -1,0 +1,121 @@
+C:\Users\ASUS\Desktop\hp2\hp2\bin\Debug\hp2.exe.config
+C:\Users\ASUS\Desktop\hp2\hp2\bin\Debug\hp2.exe
+C:\Users\ASUS\Desktop\hp2\hp2\bin\Debug\hp2.pdb
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.Form1.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.Properties.Resources.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.exe
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.pdb
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.login.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.admin_panel.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.details_admin.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.firstpage.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.signup.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.admin_doctor.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.admin_panel_home.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.admin_patient.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.admin_room.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.admin_service.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.patient_panel.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.patient_panel_home.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.patient_appointment_panel.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.patient_details_panel.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.patient_report_panel.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.patient_service_panel.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.doctor_home_panel.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.doctor_panel.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.doctor_schedule_panel.resources
+C:\Users\ASUS\Desktop\hp2\hp2\obj\Debug\hp2.doctor_update_panel.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.csprojAssemblyReference.cache
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.admin_doctor.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.admin_panel.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.admin_panel_home.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.admin_patient.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.admin_room.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.admin_service.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.details_admin.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.doctor_home_panel.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.doctor_panel.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.doctor_schedule_panel.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.doctor_update_panel.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.firstpage.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.Form1.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.login.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.patient_appointment_panel.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.patient_details_panel.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.patient_panel.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.patient_panel_home.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.patient_report_panel.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.patient_service_panel.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.Properties.Resources.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.signup.resources
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.csproj.GenerateResource.cache
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.exe
+C:\Users\USER\Documents\GitHub\hp2\hp2\obj\Debug\hp2.pdb
+C:\Users\USER\Documents\GitHub\hp2\hp2\bin\Debug\hp2.exe.config
+C:\Users\USER\Documents\GitHub\hp2\hp2\bin\Debug\hp2.exe
+C:\Users\USER\Documents\GitHub\hp2\hp2\bin\Debug\hp2.pdb
+C:\Users\USER\Desktop\C# Project\hp2\hp2\bin\Debug\hp2.exe.config
+C:\Users\USER\Desktop\C# Project\hp2\hp2\bin\Debug\hp2.exe
+C:\Users\USER\Desktop\C# Project\hp2\hp2\bin\Debug\hp2.pdb
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.admin_doctor.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.admin_panel.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.admin_panel_home.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.admin_patient.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.admin_room.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.admin_service.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.doctor_home_panel.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.doctor_panel.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.doctor_schedule_panel.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.doctor_update_panel.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.firstpage.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.Form1.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.login.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.patient_appointment_panel.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.patient_details_panel.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.patient_panel.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.patient_panel_home.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.patient_report_panel.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.patient_service_panel.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.Properties.Resources.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.signup.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.exe
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.pdb
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.admin_edit_doctor_info.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.admin_details.resources
+C:\Users\USER\Desktop\C# Project\hp2\hp2\obj\Debug\hp2.admin_add_new_doctor.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\bin\Debug\hp2.exe.config
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\bin\Debug\hp2.exe
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\bin\Debug\hp2.pdb
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.csprojAssemblyReference.cache
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.admin_add_new_doctor.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.admin_edit_doctor_info.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.admin_doctor.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.admin_panel.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.admin_panel_home.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.admin_patient.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.admin_room.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.admin_service.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.admin_details.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.doctor_home_panel.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.doctor_panel.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.doctor_schedule_panel.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.doctor_update_panel.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.firstpage.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.Form1.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.login.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.patient_appointment_panel.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.patient_details_panel.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.patient_panel.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.patient_panel_home.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.patient_report_panel.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.patient_service_panel.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.Properties.Resources.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.signup.resources
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.csproj.GenerateResource.cache
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.csproj.CoreCompileInputs.cache
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.exe
+C:\Users\Hp\Desktop\New folder\Hospital\hp2\obj\Debug\hp2.pdb
