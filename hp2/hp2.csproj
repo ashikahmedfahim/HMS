@@ -54,12 +54,6 @@
     <Compile Include="Forms\admin_add_new_doctor.Designer.cs">
       <DependentUpon>admin_add_new_doctor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\admin_edit_doctor_info.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\admin_edit_doctor_info.Designer.cs">
-      <DependentUpon>admin_edit_doctor_info.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\admin_doctor.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -203,9 +197,6 @@
     </Compile>
     <EmbeddedResource Include="Forms\admin_add_new_doctor.resx">
       <DependentUpon>admin_add_new_doctor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\admin_edit_doctor_info.resx">
-      <DependentUpon>admin_edit_doctor_info.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\admin_doctor.resx">
       <DependentUpon>admin_doctor.cs</DependentUpon>

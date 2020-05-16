@@ -41,13 +41,7 @@ namespace hp2
 
         private void btn_edit_doctor_info_Click(object sender, EventArgs e)
         {
-            if (!admin_panel.Instance_2.PnlContainer_2.Controls.ContainsKey("admin_edit_doctor_info"))
-            {
-                admin_edit_doctor_info ad_e_d = new admin_edit_doctor_info();
-                ad_e_d.Dock = DockStyle.Fill;
-                admin_panel.Instance_2.PnlContainer_2.Controls.Add(ad_e_d);
-            }
-            admin_panel.Instance_2.PnlContainer_2.Controls["admin_edit_doctor_info"].BringToFront();
+           
         }
 
         private void btn_add_new_doctor_Click(object sender, EventArgs e)

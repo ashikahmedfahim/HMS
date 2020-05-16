@@ -30,6 +30,8 @@
         {
             this.lbl_admin = new System.Windows.Forms.Label();
             this.p_sub = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btn_logout = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btn_details = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -44,16 +46,14 @@
             this.btn_admin_home = new System.Windows.Forms.Button();
             this.p_none = new System.Windows.Forms.Panel();
             this.panel_ad_right = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btn_logout = new System.Windows.Forms.Button();
             this.p_sub.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_admin
@@ -89,6 +89,28 @@
             this.p_sub.Name = "p_sub";
             this.p_sub.Size = new System.Drawing.Size(202, 650);
             this.p_sub.TabIndex = 1;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.btn_logout);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 445);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(202, 53);
+            this.panel7.TabIndex = 8;
+            // 
+            // btn_logout
+            // 
+            this.btn_logout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logout.Location = new System.Drawing.Point(0, 0);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(202, 53);
+            this.btn_logout.TabIndex = 0;
+            this.btn_logout.Text = "Log Out";
+            this.btn_logout.UseVisualStyleBackColor = true;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click_1);
             // 
             // panel6
             // 
@@ -256,28 +278,6 @@
             this.panel_ad_right.TabIndex = 2;
             this.panel_ad_right.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_ad_right_Paint);
             // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.btn_logout);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 445);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(202, 53);
-            this.panel7.TabIndex = 8;
-            // 
-            // btn_logout
-            // 
-            this.btn_logout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_logout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_logout.Location = new System.Drawing.Point(0, 0);
-            this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(202, 53);
-            this.btn_logout.TabIndex = 0;
-            this.btn_logout.Text = "Log Out";
-            this.btn_logout.UseVisualStyleBackColor = true;
-            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click_1);
-            // 
             // admin_panel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,13 +291,13 @@
             this.Load += new System.EventHandler(this.admin_panel_Load);
             this.p_sub.ResumeLayout(false);
             this.p_sub.PerformLayout();
+            this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
