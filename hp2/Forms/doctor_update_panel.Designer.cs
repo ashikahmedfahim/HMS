@@ -193,6 +193,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // doctor_update_panel
             // 
@@ -215,6 +216,7 @@
             this.Controls.Add(this.label1);
             this.Name = "doctor_update_panel";
             this.Size = new System.Drawing.Size(758, 650);
+            this.Load += new System.EventHandler(this.doctor_update_panel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
