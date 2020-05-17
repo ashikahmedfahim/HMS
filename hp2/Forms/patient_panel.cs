@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using hp2.Forms;
 
 namespace hp2
 {
@@ -86,6 +87,17 @@ namespace hp2
                 patient_panel.Instance_4.PnlContainer_4.Controls.Add(p_d_p);
             }
             patient_panel.Instance_4.PnlContainer_4.Controls["patient_details_panel"].BringToFront();
+        }
+
+        private void btn_patient_logout_Click(object sender, EventArgs e)
+        {
+            if (!patient_panel.Instance_4.PnlContainer_4.Controls.ContainsKey("patient_logout_panel"))
+            {
+                patient_logout_panel p_l_p = new patient_logout_panel();
+                p_l_p.Dock = DockStyle.Fill;
+                patient_panel.Instance_4.PnlContainer_4.Controls.Add(p_l_p);
+            }
+            patient_panel.Instance_4.PnlContainer_4.Controls["patient_logout_panel"].BringToFront();
         }
     }
 }

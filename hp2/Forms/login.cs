@@ -93,6 +93,7 @@ namespace hp2
                             Form1.Instance.PnlContainer.Controls.Add(pp);
                         }
                         Form1.Instance.PnlContainer.Controls["patient_panel"].BringToFront();
+
                     }
 
                     else if (result == "d")

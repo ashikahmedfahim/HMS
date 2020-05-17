@@ -28,18 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.txt_box_login_userid = new System.Windows.Forms.TextBox();
             this.txt_box_login_password = new System.Windows.Forms.TextBox();
             this.btn_logIn = new System.Windows.Forms.Button();
             this.lbl_username = new System.Windows.Forms.Label();
             this.lbl_pass = new System.Windows.Forms.Label();
             this.btn_cancel_login = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_box_login_userid
             // 
             this.txt_box_login_userid.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_box_login_userid.Location = new System.Drawing.Point(858, 245);
+            this.txt_box_login_userid.Location = new System.Drawing.Point(475, 263);
             this.txt_box_login_userid.Name = "txt_box_login_userid";
             this.txt_box_login_userid.Size = new System.Drawing.Size(328, 36);
             this.txt_box_login_userid.TabIndex = 0;
@@ -48,7 +51,7 @@
             // txt_box_login_password
             // 
             this.txt_box_login_password.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_box_login_password.Location = new System.Drawing.Point(858, 323);
+            this.txt_box_login_password.Location = new System.Drawing.Point(475, 341);
             this.txt_box_login_password.Name = "txt_box_login_password";
             this.txt_box_login_password.PasswordChar = '*';
             this.txt_box_login_password.Size = new System.Drawing.Size(328, 36);
@@ -58,7 +61,7 @@
             // btn_logIn
             // 
             this.btn_logIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_logIn.Location = new System.Drawing.Point(1065, 402);
+            this.btn_logIn.Location = new System.Drawing.Point(682, 407);
             this.btn_logIn.Name = "btn_logIn";
             this.btn_logIn.Size = new System.Drawing.Size(121, 42);
             this.btn_logIn.TabIndex = 3;
@@ -73,7 +76,7 @@
             this.lbl_username.AutoSize = true;
             this.lbl_username.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_username.ForeColor = System.Drawing.Color.White;
-            this.lbl_username.Location = new System.Drawing.Point(728, 251);
+            this.lbl_username.Location = new System.Drawing.Point(345, 269);
             this.lbl_username.Name = "lbl_username";
             this.lbl_username.Size = new System.Drawing.Size(107, 30);
             this.lbl_username.TabIndex = 4;
@@ -84,7 +87,7 @@
             this.lbl_pass.AutoSize = true;
             this.lbl_pass.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_pass.ForeColor = System.Drawing.Color.White;
-            this.lbl_pass.Location = new System.Drawing.Point(699, 323);
+            this.lbl_pass.Location = new System.Drawing.Point(316, 341);
             this.lbl_pass.Name = "lbl_pass";
             this.lbl_pass.Size = new System.Drawing.Size(136, 30);
             this.lbl_pass.TabIndex = 5;
@@ -93,7 +96,7 @@
             // btn_cancel_login
             // 
             this.btn_cancel_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancel_login.Location = new System.Drawing.Point(931, 402);
+            this.btn_cancel_login.Location = new System.Drawing.Point(548, 407);
             this.btn_cancel_login.Name = "btn_cancel_login";
             this.btn_cancel_login.Size = new System.Drawing.Size(115, 39);
             this.btn_cancel_login.TabIndex = 13;
@@ -103,11 +106,22 @@
             this.btn_cancel_login.MouseLeave += new System.EventHandler(this.btn_cancel_login_MouseLeave);
             this.btn_cancel_login.MouseHover += new System.EventHandler(this.btn_cancel_login_MouseHover);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(568, 149);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(130, 108);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_cancel_login);
             this.Controls.Add(this.lbl_pass);
             this.Controls.Add(this.lbl_username);
@@ -117,6 +131,7 @@
             this.Name = "login";
             this.Size = new System.Drawing.Size(1280, 800);
             this.Load += new System.EventHandler(this.login_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,5 +145,6 @@
         private System.Windows.Forms.Label lbl_username;
         private System.Windows.Forms.Label lbl_pass;
         private System.Windows.Forms.Button btn_cancel_login;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
