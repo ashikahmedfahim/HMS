@@ -23,11 +23,11 @@ namespace hp2
         public void load() {
             dbobj = new DBAccess();
             dtUser = new DataTable();
-            string query = ("SELECT * FROM USER_INFO WHERE USER_ID = '" + login.genUserId + "'");
+            string query = ("SELECT * FROM USER_INFO WHERE USER_ID = '" + login.getId() + "'");
             dbobj.readDatathroughAdapter(query, dtUser);
             if (dtUser.Rows.Count == 1)
             {
-                textBox1.Text = login.genUserId;
+                textBox1.Text = login.getId();
                 textBox2.Text = dtUser.Rows[0]["NAME"].ToString();
                 textBox3.Text = dtUser.Rows[0]["PHONE"].ToString();
                 textBox4.Text = dtUser.Rows[0]["ADDRESS"].ToString();
@@ -50,7 +50,7 @@ namespace hp2
             }
             else {
                 if (textBox5.Text!="") {
-                    string query = "UPDATE USER_INFO  SET PHONE='"+textBox5.Text+"' WHERE USER_ID = '"+login.genUserId+"'";
+                    string query = "UPDATE USER_INFO  SET PHONE='"+textBox5.Text+"' WHERE USER_ID = '"+login.getId() + "'";
                     SqlCommand updateCommand = new SqlCommand(query);
                     int res = dbobj.executeQuery(updateCommand);
                     if (res==1) {
@@ -59,7 +59,7 @@ namespace hp2
                 
                 }
                 if (textBox6.Text!="") {
-                    string query = "UPDATE USER_INFO  SET ADDRESS='" + textBox6.Text + "' WHERE USER_ID = '" + login.genUserId + "'";
+                    string query = "UPDATE USER_INFO  SET ADDRESS='" + textBox6.Text + "' WHERE USER_ID = '" + login.getId() + "'";
                     SqlCommand updateCommand = new SqlCommand(query);
                     int res = dbobj.executeQuery(updateCommand);
                     if (res == 1)

@@ -15,7 +15,7 @@ namespace hp2
         public doctor_home_panel()
         {
             InitializeComponent();
-            label1.Text = login.genUserId;
+            label1.Text = login.getId();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -25,7 +25,7 @@ namespace hp2
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            login.genUserId = "";
+            login.setId("");
             if (!Form1.Instance.PnlContainer.Controls.ContainsKey("login"))
             {
                 login lgn = new login();
