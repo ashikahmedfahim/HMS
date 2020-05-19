@@ -14,13 +14,21 @@ namespace hp2
 {
     public partial class login : UserControl
     {
-        public static string genUserId;
+        private static string genUserId;
         DBAccess dbobj;
         DataTable dtUsers; 
         public login()
         {
             InitializeComponent();
             loadData();
+        }
+
+        public static void setId(string x) {
+            genUserId = x;
+        }
+
+        public static string getId() {
+            return genUserId;
         }
 
         public void loadData() {
@@ -67,7 +75,7 @@ namespace hp2
 
                 if (dtUsers.Rows.Count == 1)
                 {
-                    genUserId = user_id;
+                    setId(user_id);
                     dbobj.closeConn();
                     string result = txt_box_login_userid.Text.Substring(0, 1);
                     txt_box_login_userid.Text = "";

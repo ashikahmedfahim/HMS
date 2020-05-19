@@ -73,7 +73,7 @@ namespace hp2
                     int success = dbobj.executeQuery(insertCommand);
                     if (success == 1)
                     {
-                        login.genUserId = user_id;
+                        login.setId(user_id);
                         MessageBox.Show("SignUp Successful");
                         if (!Form1.Instance.PnlContainer.Controls.ContainsKey("patient_panel"))
                         {
