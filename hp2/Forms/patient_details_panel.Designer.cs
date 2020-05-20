@@ -167,6 +167,7 @@
             this.Controls.Add(this.label1);
             this.Name = "patient_details_panel";
             this.Size = new System.Drawing.Size(1010, 763);
+            this.Load += new System.EventHandler(this.patient_details_panel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

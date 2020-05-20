@@ -54,5 +54,16 @@ namespace hp2
             }
             admin_panel.Instance_2.PnlContainer_2.Controls["admin_add_new_doctor"].BringToFront();
         }
+
+        private void btn_add_new_doctor_Click_1(object sender, EventArgs e)
+        {
+            if (!admin_panel.Instance_2.PnlContainer_2.Controls.ContainsKey("admin_add_new_doctor"))
+            {
+                admin_add_new_doctor ad_a_n_d = new admin_add_new_doctor();
+                ad_a_n_d.Dock = DockStyle.Fill;
+                admin_panel.Instance_2.PnlContainer_2.Controls.Add(ad_a_n_d);
+            }
+            admin_panel.Instance_2.PnlContainer_2.Controls["admin_add_new_doctor"].BringToFront();
+        }
     }
 }

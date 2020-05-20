@@ -13,6 +13,7 @@ namespace hp2
 {
     public partial class patient_panel : UserControl
     {
+        string id;
         static patient_panel _obj4;
 
         public static patient_panel Instance_4
@@ -30,6 +31,11 @@ namespace hp2
         {
             get { return patient_panel_right_side; }
             set { patient_panel_right_side = value; }
+        }
+        public patient_panel(string id)
+        {
+            InitializeComponent();
+            this.id = id;
         }
         public patient_panel()
         {
@@ -82,7 +88,7 @@ namespace hp2
         {
             if (!patient_panel.Instance_4.PnlContainer_4.Controls.ContainsKey("patient_details_panel"))
             {
-                patient_details_panel p_d_p = new patient_details_panel();
+                patient_details_panel p_d_p = new patient_details_panel(id);
                 p_d_p.Dock = DockStyle.Fill;
                 patient_panel.Instance_4.PnlContainer_4.Controls.Add(p_d_p);
             }

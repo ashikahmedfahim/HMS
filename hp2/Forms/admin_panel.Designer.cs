@@ -253,6 +253,7 @@
             // btn_admin_home
             // 
             this.btn_admin_home.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_admin_home.FlatAppearance.BorderSize = 0;
             this.btn_admin_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_admin_home.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_admin_home.Location = new System.Drawing.Point(0, 0);

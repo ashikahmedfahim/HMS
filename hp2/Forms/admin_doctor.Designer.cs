@@ -278,6 +278,7 @@
             this.btn_add_new_doctor.TabIndex = 45;
             this.btn_add_new_doctor.Text = "Add New Doctor";
             this.btn_add_new_doctor.UseVisualStyleBackColor = true;
+            this.btn_add_new_doctor.Click += new System.EventHandler(this.btn_add_new_doctor_Click_1);
             // 
             // admin_doctor
             // 

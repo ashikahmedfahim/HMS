@@ -96,7 +96,7 @@ namespace hp2
                     {
                         if (!Form1.Instance.PnlContainer.Controls.ContainsKey("patient_panel"))
                         {
-                            patient_panel pp = new patient_panel();
+                            patient_panel pp = new patient_panel(user_id);
                             pp.Dock = DockStyle.Fill;
                             Form1.Instance.PnlContainer.Controls.Add(pp);
                         }
