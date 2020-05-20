@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(patient_panel));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btn_patient_logout = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btn_patient_details = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -42,17 +44,15 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.patient_panel_right_side = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btn_patient_logout = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,160 +67,10 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(360, 939);
             this.panel1.TabIndex = 1;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.btn_patient_details);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 418);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(360, 80);
-            this.panel6.TabIndex = 5;
-            // 
-            // btn_patient_details
-            // 
-            this.btn_patient_details.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_patient_details.FlatAppearance.BorderSize = 0;
-            this.btn_patient_details.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_patient_details.Font = new System.Drawing.Font("Century Gothic", 13.8F);
-            this.btn_patient_details.ForeColor = System.Drawing.Color.White;
-            this.btn_patient_details.Location = new System.Drawing.Point(0, 0);
-            this.btn_patient_details.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_patient_details.Name = "btn_patient_details";
-            this.btn_patient_details.Size = new System.Drawing.Size(360, 80);
-            this.btn_patient_details.TabIndex = 0;
-            this.btn_patient_details.Text = "Details";
-            this.btn_patient_details.UseVisualStyleBackColor = true;
-            this.btn_patient_details.Click += new System.EventHandler(this.btn_patient_details_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.btn_patient_reports);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 338);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(360, 80);
-            this.panel5.TabIndex = 4;
-            // 
-            // btn_patient_reports
-            // 
-            this.btn_patient_reports.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_patient_reports.FlatAppearance.BorderSize = 0;
-            this.btn_patient_reports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_patient_reports.Font = new System.Drawing.Font("Century Gothic", 13.8F);
-            this.btn_patient_reports.ForeColor = System.Drawing.Color.White;
-            this.btn_patient_reports.Location = new System.Drawing.Point(0, 0);
-            this.btn_patient_reports.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_patient_reports.Name = "btn_patient_reports";
-            this.btn_patient_reports.Size = new System.Drawing.Size(360, 80);
-            this.btn_patient_reports.TabIndex = 0;
-            this.btn_patient_reports.Text = "Reports";
-            this.btn_patient_reports.UseVisualStyleBackColor = true;
-            this.btn_patient_reports.Click += new System.EventHandler(this.btn_patient_reports_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btn_patient_services);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 258);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(360, 80);
-            this.panel4.TabIndex = 3;
-            // 
-            // btn_patient_services
-            // 
-            this.btn_patient_services.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_patient_services.FlatAppearance.BorderSize = 0;
-            this.btn_patient_services.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_patient_services.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_patient_services.ForeColor = System.Drawing.Color.White;
-            this.btn_patient_services.Location = new System.Drawing.Point(0, 0);
-            this.btn_patient_services.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_patient_services.Name = "btn_patient_services";
-            this.btn_patient_services.Size = new System.Drawing.Size(360, 80);
-            this.btn_patient_services.TabIndex = 0;
-            this.btn_patient_services.Text = "Services";
-            this.btn_patient_services.UseVisualStyleBackColor = true;
-            this.btn_patient_services.Click += new System.EventHandler(this.btn_patient_services_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btn_patient_appointment);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 178);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(360, 80);
-            this.panel3.TabIndex = 2;
-            // 
-            // btn_patient_appointment
-            // 
-            this.btn_patient_appointment.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_patient_appointment.FlatAppearance.BorderSize = 0;
-            this.btn_patient_appointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_patient_appointment.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_patient_appointment.ForeColor = System.Drawing.Color.White;
-            this.btn_patient_appointment.Location = new System.Drawing.Point(0, 0);
-            this.btn_patient_appointment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_patient_appointment.Name = "btn_patient_appointment";
-            this.btn_patient_appointment.Size = new System.Drawing.Size(360, 80);
-            this.btn_patient_appointment.TabIndex = 0;
-            this.btn_patient_appointment.Text = "Appointment";
-            this.btn_patient_appointment.UseVisualStyleBackColor = true;
-            this.btn_patient_appointment.Click += new System.EventHandler(this.btn_patient_appointment_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 39);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(360, 139);
-            this.panel2.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(360, 139);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.MediumSpringGreen;
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(3, 2, 0, 0);
-            this.label2.Size = new System.Drawing.Size(194, 39);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "        Patient ";
-            // 
-            // patient_panel_right_side
-            // 
-            this.patient_panel_right_side.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.patient_panel_right_side.Location = new System.Drawing.Point(360, 0);
-            this.patient_panel_right_side.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.patient_panel_right_side.Name = "patient_panel_right_side";
-            this.patient_panel_right_side.Size = new System.Drawing.Size(1347, 939);
-            this.patient_panel_right_side.TabIndex = 2;
             // 
             // panel7
             // 
@@ -246,6 +96,156 @@
             this.btn_patient_logout.UseVisualStyleBackColor = true;
             this.btn_patient_logout.Click += new System.EventHandler(this.btn_patient_logout_Click);
             // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.btn_patient_details);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 418);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(360, 80);
+            this.panel6.TabIndex = 5;
+            // 
+            // btn_patient_details
+            // 
+            this.btn_patient_details.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_patient_details.FlatAppearance.BorderSize = 0;
+            this.btn_patient_details.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_patient_details.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            this.btn_patient_details.ForeColor = System.Drawing.Color.White;
+            this.btn_patient_details.Location = new System.Drawing.Point(0, 0);
+            this.btn_patient_details.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_patient_details.Name = "btn_patient_details";
+            this.btn_patient_details.Size = new System.Drawing.Size(360, 80);
+            this.btn_patient_details.TabIndex = 0;
+            this.btn_patient_details.Text = "Details";
+            this.btn_patient_details.UseVisualStyleBackColor = true;
+            this.btn_patient_details.Click += new System.EventHandler(this.btn_patient_details_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.btn_patient_reports);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 338);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(360, 80);
+            this.panel5.TabIndex = 4;
+            // 
+            // btn_patient_reports
+            // 
+            this.btn_patient_reports.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_patient_reports.FlatAppearance.BorderSize = 0;
+            this.btn_patient_reports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_patient_reports.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            this.btn_patient_reports.ForeColor = System.Drawing.Color.White;
+            this.btn_patient_reports.Location = new System.Drawing.Point(0, 0);
+            this.btn_patient_reports.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_patient_reports.Name = "btn_patient_reports";
+            this.btn_patient_reports.Size = new System.Drawing.Size(360, 80);
+            this.btn_patient_reports.TabIndex = 0;
+            this.btn_patient_reports.Text = "Reports";
+            this.btn_patient_reports.UseVisualStyleBackColor = true;
+            this.btn_patient_reports.Click += new System.EventHandler(this.btn_patient_reports_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btn_patient_services);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 258);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(360, 80);
+            this.panel4.TabIndex = 3;
+            // 
+            // btn_patient_services
+            // 
+            this.btn_patient_services.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_patient_services.FlatAppearance.BorderSize = 0;
+            this.btn_patient_services.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_patient_services.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_patient_services.ForeColor = System.Drawing.Color.White;
+            this.btn_patient_services.Location = new System.Drawing.Point(0, 0);
+            this.btn_patient_services.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_patient_services.Name = "btn_patient_services";
+            this.btn_patient_services.Size = new System.Drawing.Size(360, 80);
+            this.btn_patient_services.TabIndex = 0;
+            this.btn_patient_services.Text = "Services";
+            this.btn_patient_services.UseVisualStyleBackColor = true;
+            this.btn_patient_services.Click += new System.EventHandler(this.btn_patient_services_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btn_patient_appointment);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 178);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(360, 80);
+            this.panel3.TabIndex = 2;
+            // 
+            // btn_patient_appointment
+            // 
+            this.btn_patient_appointment.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_patient_appointment.FlatAppearance.BorderSize = 0;
+            this.btn_patient_appointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_patient_appointment.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_patient_appointment.ForeColor = System.Drawing.Color.White;
+            this.btn_patient_appointment.Location = new System.Drawing.Point(0, 0);
+            this.btn_patient_appointment.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_patient_appointment.Name = "btn_patient_appointment";
+            this.btn_patient_appointment.Size = new System.Drawing.Size(360, 80);
+            this.btn_patient_appointment.TabIndex = 0;
+            this.btn_patient_appointment.Text = "Appointment";
+            this.btn_patient_appointment.UseVisualStyleBackColor = true;
+            this.btn_patient_appointment.Click += new System.EventHandler(this.btn_patient_appointment_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 39);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(360, 139);
+            this.panel2.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(360, 139);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Padding = new System.Windows.Forms.Padding(3, 2, 0, 0);
+            this.label2.Size = new System.Drawing.Size(194, 39);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "        Patient ";
+            // 
+            // patient_panel_right_side
+            // 
+            this.patient_panel_right_side.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.patient_panel_right_side.Location = new System.Drawing.Point(360, 0);
+            this.patient_panel_right_side.Margin = new System.Windows.Forms.Padding(4);
+            this.patient_panel_right_side.Name = "patient_panel_right_side";
+            this.patient_panel_right_side.Size = new System.Drawing.Size(1347, 939);
+            this.patient_panel_right_side.TabIndex = 2;
+            // 
             // patient_panel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -253,19 +253,19 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
             this.Controls.Add(this.patient_panel_right_side);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "patient_panel";
             this.Size = new System.Drawing.Size(1707, 939);
             this.Load += new System.EventHandler(this.patient_panel_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

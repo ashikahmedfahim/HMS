@@ -16,8 +16,7 @@ namespace hp2
         private static SqlDataAdapter adapter = new SqlDataAdapter();
         public SqlTransaction DbTran;
 
-        private static string strConnString = "Data Source=(local);Initial Catalog=Project;Integrated Security=True";
-
+        private static string strConnString = @"Data Source=DESKTOP-H55M9KM\SQLEXPRESS;Initial Catalog=Project;Integrated Security=True";
 
 
         public void createConn()

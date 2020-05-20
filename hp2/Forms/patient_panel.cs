@@ -91,13 +91,13 @@ namespace hp2
 
         private void btn_patient_logout_Click(object sender, EventArgs e)
         {
-            if (!patient_panel.Instance_4.PnlContainer_4.Controls.ContainsKey("patient_logout_panel"))
+            if (!Form1.Instance.PnlContainer.Controls.ContainsKey("login"))
             {
-                patient_logout_panel p_l_p = new patient_logout_panel();
-                p_l_p.Dock = DockStyle.Fill;
-                patient_panel.Instance_4.PnlContainer_4.Controls.Add(p_l_p);
+                login lgn = new login();
+                lgn.Dock = DockStyle.Fill;
+                Form1.Instance.PnlContainer.Controls.Add(lgn);
             }
-            patient_panel.Instance_4.PnlContainer_4.Controls["patient_logout_panel"].BringToFront();
+            Form1.Instance.PnlContainer.Controls["login"].BringToFront();
         }
     }
 }
