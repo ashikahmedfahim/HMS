@@ -17,7 +17,7 @@ namespace hp2
         public SqlTransaction DbTran;
 
         private static string strConnString = @"Data Source=DESKTOP-H55M9KM\SQLEXPRESS;Initial Catalog=Project;Integrated Security=True";
-
+        //nayeem=@"Data Source=DESKTOP-H55M9KM\SQLEXPRESS;Initial Catalog=Project;Integrated Security=True"
 
         public void createConn()
         {
