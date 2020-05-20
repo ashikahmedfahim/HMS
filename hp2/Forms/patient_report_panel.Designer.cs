@@ -31,6 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lbl_rno = new System.Windows.Forms.Label();
+            this.lbl_rname = new System.Windows.Forms.Label();
+            this.lbl_dname = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -66,11 +69,47 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Doctor Name :";
             // 
+            // lbl_rno
+            // 
+            this.lbl_rno.AutoSize = true;
+            this.lbl_rno.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            this.lbl_rno.ForeColor = System.Drawing.Color.White;
+            this.lbl_rno.Location = new System.Drawing.Point(445, 270);
+            this.lbl_rno.Name = "lbl_rno";
+            this.lbl_rno.Size = new System.Drawing.Size(93, 30);
+            this.lbl_rno.TabIndex = 3;
+            this.lbl_rno.Text = "invalid";
+            // 
+            // lbl_rname
+            // 
+            this.lbl_rname.AutoSize = true;
+            this.lbl_rname.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            this.lbl_rname.ForeColor = System.Drawing.Color.White;
+            this.lbl_rname.Location = new System.Drawing.Point(445, 319);
+            this.lbl_rname.Name = "lbl_rname";
+            this.lbl_rname.Size = new System.Drawing.Size(93, 30);
+            this.lbl_rname.TabIndex = 4;
+            this.lbl_rname.Text = "invalid";
+            // 
+            // lbl_dname
+            // 
+            this.lbl_dname.AutoSize = true;
+            this.lbl_dname.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            this.lbl_dname.ForeColor = System.Drawing.Color.White;
+            this.lbl_dname.Location = new System.Drawing.Point(445, 368);
+            this.lbl_dname.Name = "lbl_dname";
+            this.lbl_dname.Size = new System.Drawing.Size(93, 30);
+            this.lbl_dname.TabIndex = 5;
+            this.lbl_dname.Text = "invalid";
+            // 
             // patient_report_panel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
+            this.Controls.Add(this.lbl_dname);
+            this.Controls.Add(this.lbl_rname);
+            this.Controls.Add(this.lbl_rno);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -86,5 +125,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl_rno;
+        private System.Windows.Forms.Label lbl_rname;
+        private System.Windows.Forms.Label lbl_dname;
     }
 }

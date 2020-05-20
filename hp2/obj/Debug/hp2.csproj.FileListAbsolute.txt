@@ -212,3 +212,6 @@ C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.exe
 C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.pdb
 C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.Forms.patient_logout_panel.resources
 C:\Users\Hp\Desktop\New folder\HMS\hp2\obj\Debug\hp2.Forms.patient_logout_panel.resources
+C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.Forms.patient_appointment_time_change.resources
+C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.Forms.patient_app_time_change.resources
+C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.patient_app_time_change_panel.resources

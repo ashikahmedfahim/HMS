@@ -118,6 +118,8 @@ namespace hp2
                 }
                 else {
                     MessageBox.Show("User Id or Password is Incorrect");
+                    txt_box_login_userid.Text = "";
+                    txt_box_login_password.Text = "";
                 }
 
             }

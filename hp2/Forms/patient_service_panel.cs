@@ -16,5 +16,15 @@ namespace hp2
         {
             InitializeComponent();
         }
+
+        private void btn_info_1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Please Select the Services you wants to do from this Hospital");
+        }
+
+        private void btn_info_2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Please Select the Payment Mathod you wants to pay for the services");
+        }
     }
 }

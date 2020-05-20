@@ -95,7 +95,7 @@
             this.panel7.Controls.Add(this.btn_logout);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 545);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(269, 65);
             this.panel7.TabIndex = 8;
@@ -107,7 +107,7 @@
             this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_logout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_logout.Location = new System.Drawing.Point(0, 0);
-            this.btn_logout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_logout.Margin = new System.Windows.Forms.Padding(4);
             this.btn_logout.Name = "btn_logout";
             this.btn_logout.Size = new System.Drawing.Size(269, 65);
             this.btn_logout.TabIndex = 0;
@@ -120,7 +120,7 @@
             this.panel6.Controls.Add(this.btn_details);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 480);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(269, 65);
             this.panel6.TabIndex = 7;
@@ -256,7 +256,7 @@
             this.btn_admin_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_admin_home.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_admin_home.Location = new System.Drawing.Point(0, 0);
-            this.btn_admin_home.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_admin_home.Margin = new System.Windows.Forms.Padding(4);
             this.btn_admin_home.Name = "btn_admin_home";
             this.btn_admin_home.Size = new System.Drawing.Size(269, 65);
             this.btn_admin_home.TabIndex = 0;

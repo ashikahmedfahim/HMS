@@ -43,11 +43,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(250, 268);
+            this.label1.Location = new System.Drawing.Point(60, 272);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 30);
+            this.label1.Size = new System.Drawing.Size(386, 30);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Select Service :";
+            this.label1.Text = "Select Service you wants to do:";
             // 
             // btn_info_1
             // 
@@ -60,6 +60,7 @@
             this.btn_info_1.Size = new System.Drawing.Size(33, 30);
             this.btn_info_1.TabIndex = 1;
             this.btn_info_1.UseVisualStyleBackColor = true;
+            this.btn_info_1.Click += new System.EventHandler(this.btn_info_1_Click);
             // 
             // label2
             // 
@@ -96,6 +97,7 @@
             this.btn_info_2.Size = new System.Drawing.Size(33, 30);
             this.btn_info_2.TabIndex = 6;
             this.btn_info_2.UseVisualStyleBackColor = true;
+            this.btn_info_2.Click += new System.EventHandler(this.btn_info_2_Click);
             // 
             // checkedListBox1
             // 
