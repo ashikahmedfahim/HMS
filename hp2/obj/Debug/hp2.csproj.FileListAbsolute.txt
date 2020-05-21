@@ -203,15 +203,16 @@ C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.patient_appointment_panel.r
 C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.patient_details_panel.resources
 C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.patient_panel.resources
 C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.patient_panel_home.resources
-C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.patient_report_panel.resources
 C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.patient_service_panel.resources
 C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.Properties.Resources.resources
 C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.signup.resources
 C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.csproj.GenerateResource.cache
 C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.exe
 C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.pdb
-C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.Forms.patient_logout_panel.resources
 C:\Users\Hp\Desktop\New folder\HMS\hp2\obj\Debug\hp2.Forms.patient_logout_panel.resources
-C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.Forms.patient_appointment_time_change.resources
-C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.Forms.patient_app_time_change.resources
 C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.patient_app_time_change_panel.resources
+C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.Forms.patient_cancel_app_panel.resources
+C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.patient_app_cancel_panel.resources
+C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.patient_bill_panel.resources
+C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.patient__info_change.resources
+C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.patient_password_change.resources

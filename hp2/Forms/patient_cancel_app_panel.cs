@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace hp2
+namespace hp2.Forms
 {
-    public partial class patient_report_panel : UserControl
+    public partial class patient_cancel_app_panel : UserControl
     {
-        public patient_report_panel()
+        public patient_cancel_app_panel()
         {
             InitializeComponent();
+        }
+
+        private void patient_cancel_app_panel_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -56,7 +56,17 @@ namespace hp2
             }
             patient_panel.Instance_4.PnlContainer_4.Controls["patient_app_time_change_panel"].BringToFront();
         }
-    
+
+        private void btn_cancel_appointment_Click(object sender, EventArgs e)
+        {
+            if (!patient_panel.Instance_4.PnlContainer_4.Controls.ContainsKey("patient_app_cancel_panel"))
+            {
+                patient_app_cancel_panel p_a_t_c_p = new patient_app_cancel_panel();
+                p_a_t_c_p.Dock = DockStyle.Fill;
+                patient_panel.Instance_4.PnlContainer_4.Controls.Add(p_a_t_c_p);
+            }
+            patient_panel.Instance_4.PnlContainer_4.Controls["patient_app_cancel_panel"].BringToFront();
+        }
     }
     
 }

@@ -35,7 +35,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.btn_patient_details = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btn_patient_reports = new System.Windows.Forms.Button();
+            this.btn_patient_bill = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btn_patient_services = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -124,7 +124,7 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.btn_patient_reports);
+            this.panel5.Controls.Add(this.btn_patient_bill);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 338);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
@@ -132,21 +132,21 @@
             this.panel5.Size = new System.Drawing.Size(360, 80);
             this.panel5.TabIndex = 4;
             // 
-            // btn_patient_reports
+            // btn_patient_bill
             // 
-            this.btn_patient_reports.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_patient_reports.FlatAppearance.BorderSize = 0;
-            this.btn_patient_reports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_patient_reports.Font = new System.Drawing.Font("Century Gothic", 13.8F);
-            this.btn_patient_reports.ForeColor = System.Drawing.Color.White;
-            this.btn_patient_reports.Location = new System.Drawing.Point(0, 0);
-            this.btn_patient_reports.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_patient_reports.Name = "btn_patient_reports";
-            this.btn_patient_reports.Size = new System.Drawing.Size(360, 80);
-            this.btn_patient_reports.TabIndex = 0;
-            this.btn_patient_reports.Text = "Reports";
-            this.btn_patient_reports.UseVisualStyleBackColor = true;
-            this.btn_patient_reports.Click += new System.EventHandler(this.btn_patient_reports_Click);
+            this.btn_patient_bill.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_patient_bill.FlatAppearance.BorderSize = 0;
+            this.btn_patient_bill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_patient_bill.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            this.btn_patient_bill.ForeColor = System.Drawing.Color.White;
+            this.btn_patient_bill.Location = new System.Drawing.Point(0, 0);
+            this.btn_patient_bill.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_patient_bill.Name = "btn_patient_bill";
+            this.btn_patient_bill.Size = new System.Drawing.Size(360, 80);
+            this.btn_patient_bill.TabIndex = 0;
+            this.btn_patient_bill.Text = "Bill";
+            this.btn_patient_bill.UseVisualStyleBackColor = true;
+            this.btn_patient_bill.Click += new System.EventHandler(this.btn_patient_bill_Click);
             // 
             // panel4
             // 
@@ -278,7 +278,7 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btn_patient_details;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btn_patient_reports;
+        private System.Windows.Forms.Button btn_patient_bill;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btn_patient_services;
         private System.Windows.Forms.Button btn_patient_appointment;

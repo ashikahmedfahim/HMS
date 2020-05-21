@@ -34,32 +34,61 @@ namespace hp2
         {
             InitializeComponent();
         }
-
-        private void patient_details_panel_Load(object sender, EventArgs e)
+        public void load()
         {
             dbobj = new DBAccess();
             dtUser = new DataTable();
-            //string name = lbl_pname.Text;
-            //string userid = lbl_puserid.Text;
-            //string phone = lbl_pphone_no.Text;
-            //string address = lbl_paddress.Text;
             string query = "select * from USER_INFO WHERE USER_ID= '" + id + "'";
-            // SqlCommand insertCommand = new SqlCommand(query);
             SqlDataReader select_info = dbobj.readDatathroughReader(query);
             while (select_info.Read())
             {
-                 //user_id = select_info["UER_ID"].ToString();
-                 name = select_info["NAME"].ToString();
-                 phone = select_info["PHONE"].ToString();
-                 address = select_info["ADDRESS"].ToString();
+
+                name = select_info["NAME"].ToString();
+                phone = select_info["PHONE"].ToString();
+                address = select_info["ADDRESS"].ToString();
             }
 
             lbl_puserid.Text = id;
             lbl_pname.Text = name;
-            //lbl_puserid.Text = user_id;
             lbl_pphone_no.Text = phone;
             lbl_paddress.Text = address;
-            
+            dbobj.closeConn();
+        }
+        private void patient_details_panel_Load(object sender, EventArgs e)
+        {
+            load();
+
+        }
+
+        private void btn_info_change_Click(object sender, EventArgs e)
+        {
+            if (!patient_panel.Instance_4.PnlContainer_4.Controls.ContainsKey("patient__info_change"))
+            {
+                patient__info_change p_i_c = new patient__info_change();
+                p_i_c.Dock = DockStyle.Fill;
+                patient_panel.Instance_4.PnlContainer_4.Controls.Add(p_i_c);
+            }
+            patient_panel.Instance_4.PnlContainer_4.Controls["patient__info_change"].BringToFront();
+            load();
+
+        }
+
+        private void btn_password_change_Click(object sender, EventArgs e)
+        {
+            if (!patient_panel.Instance_4.PnlContainer_4.Controls.ContainsKey("patient_password_change"))
+            {
+                patient_password_change p_p_c = new patient_password_change();
+                p_p_c.Dock = DockStyle.Fill;
+                patient_panel.Instance_4.PnlContainer_4.Controls.Add(p_p_c);
+            }
+            patient_panel.Instance_4.PnlContainer_4.Controls["patient_password_change"].BringToFront();
+            load();
+
+        }
+
+        private void btn_refresh_Click(object sender, EventArgs e)
+        {
+            load();
         }
     }
 

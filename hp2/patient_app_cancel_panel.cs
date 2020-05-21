@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace hp2
 {
-    public partial class patient_app_time_change_panel : UserControl
+    public partial class patient_app_cancel_panel : UserControl
     {
-        public patient_app_time_change_panel()
+        public patient_app_cancel_panel()
         {
             InitializeComponent();
-        }
-
-        private void patient_app_time_change_panel_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_back_Click(object sender, EventArgs e)

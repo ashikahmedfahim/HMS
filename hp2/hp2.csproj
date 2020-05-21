@@ -145,29 +145,17 @@
     <Compile Include="Forms\patient_appointment_panel.Designer.cs">
       <DependentUpon>patient_appointment_panel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\patient_appointment_time_change.cs">
+    <Compile Include="Forms\patient_cancel_app_panel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\patient_appointment_time_change.Designer.cs">
-      <DependentUpon>patient_appointment_time_change.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\patient_app_time_change.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\patient_app_time_change.Designer.cs">
-      <DependentUpon>patient_app_time_change.cs</DependentUpon>
+    <Compile Include="Forms\patient_cancel_app_panel.Designer.cs">
+      <DependentUpon>patient_cancel_app_panel.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\patient_details_panel.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\patient_details_panel.Designer.cs">
       <DependentUpon>patient_details_panel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\patient_logout_panel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\patient_logout_panel.Designer.cs">
-      <DependentUpon>patient_logout_panel.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\patient_panel.cs">
       <SubType>UserControl</SubType>
@@ -181,23 +169,41 @@
     <Compile Include="Forms\patient_panel_home.Designer.cs">
       <DependentUpon>patient_panel_home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\patient_report_panel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\patient_report_panel.Designer.cs">
-      <DependentUpon>patient_report_panel.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\patient_service_panel.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\patient_service_panel.Designer.cs">
       <DependentUpon>patient_service_panel.cs</DependentUpon>
     </Compile>
+    <Compile Include="patient _info_change.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="patient _info_change.Designer.cs">
+      <DependentUpon>patient _info_change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patient_app_cancel_panel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="patient_app_cancel_panel.Designer.cs">
+      <DependentUpon>patient_app_cancel_panel.cs</DependentUpon>
+    </Compile>
     <Compile Include="patient_app_time_change_panel.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="patient_app_time_change_panel.Designer.cs">
       <DependentUpon>patient_app_time_change_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patient_bill_panel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="patient_bill_panel.Designer.cs">
+      <DependentUpon>patient_bill_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patient_password_change.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="patient_password_change.Designer.cs">
+      <DependentUpon>patient_password_change.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -267,17 +273,11 @@
     <EmbeddedResource Include="Forms\patient_appointment_panel.resx">
       <DependentUpon>patient_appointment_panel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\patient_appointment_time_change.resx">
-      <DependentUpon>patient_appointment_time_change.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\patient_app_time_change.resx">
-      <DependentUpon>patient_app_time_change.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\patient_cancel_app_panel.resx">
+      <DependentUpon>patient_cancel_app_panel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\patient_details_panel.resx">
       <DependentUpon>patient_details_panel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\patient_logout_panel.resx">
-      <DependentUpon>patient_logout_panel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\patient_panel.resx">
       <DependentUpon>patient_panel.cs</DependentUpon>
@@ -285,14 +285,23 @@
     <EmbeddedResource Include="Forms\patient_panel_home.resx">
       <DependentUpon>patient_panel_home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\patient_report_panel.resx">
-      <DependentUpon>patient_report_panel.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\patient_service_panel.resx">
       <DependentUpon>patient_service_panel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="patient _info_change.resx">
+      <DependentUpon>patient _info_change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patient_app_cancel_panel.resx">
+      <DependentUpon>patient_app_cancel_panel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="patient_app_time_change_panel.resx">
       <DependentUpon>patient_app_time_change_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patient_bill_panel.resx">
+      <DependentUpon>patient_bill_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patient_password_change.resx">
+      <DependentUpon>patient_password_change.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
