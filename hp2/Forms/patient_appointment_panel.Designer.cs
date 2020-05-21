@@ -39,11 +39,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_doctor_select = new System.Windows.Forms.Button();
             this.main_panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // main_panel
             // 
+            this.main_panel.Controls.Add(this.btn_doctor_select);
             this.main_panel.Controls.Add(this.label4);
             this.main_panel.Controls.Add(this.dateTimePicker1);
             this.main_panel.Controls.Add(this.btn_cancel_appointment);
@@ -54,9 +56,9 @@
             this.main_panel.Controls.Add(this.label3);
             this.main_panel.Controls.Add(this.label2);
             this.main_panel.Controls.Add(this.label1);
-            this.main_panel.Location = new System.Drawing.Point(0, 0);
+            this.main_panel.Location = new System.Drawing.Point(0, 3);
             this.main_panel.Name = "main_panel";
-            this.main_panel.Size = new System.Drawing.Size(1007, 763);
+            this.main_panel.Size = new System.Drawing.Size(1007, 760);
             this.main_panel.TabIndex = 10;
             // 
             // label4
@@ -135,7 +137,7 @@
             // 
             this.cbox_patient_doc_name.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.cbox_patient_doc_name.FormattingEnabled = true;
-            this.cbox_patient_doc_name.Location = new System.Drawing.Point(403, 241);
+            this.cbox_patient_doc_name.Location = new System.Drawing.Point(403, 198);
             this.cbox_patient_doc_name.Name = "cbox_patient_doc_name";
             this.cbox_patient_doc_name.Size = new System.Drawing.Size(393, 35);
             this.cbox_patient_doc_name.TabIndex = 13;
@@ -156,7 +158,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(117, 241);
+            this.label2.Location = new System.Drawing.Point(117, 198);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(270, 30);
             this.label2.TabIndex = 11;
@@ -173,6 +175,19 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Appointment";
             // 
+            // btn_doctor_select
+            // 
+            this.btn_doctor_select.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_doctor_select.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_doctor_select.ForeColor = System.Drawing.Color.White;
+            this.btn_doctor_select.Location = new System.Drawing.Point(685, 248);
+            this.btn_doctor_select.Name = "btn_doctor_select";
+            this.btn_doctor_select.Size = new System.Drawing.Size(111, 33);
+            this.btn_doctor_select.TabIndex = 20;
+            this.btn_doctor_select.Text = "Select";
+            this.btn_doctor_select.UseVisualStyleBackColor = true;
+            this.btn_doctor_select.Click += new System.EventHandler(this.btn_doctor_select_Click);
+            // 
             // patient_appointment_panel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -181,6 +196,7 @@
             this.Controls.Add(this.main_panel);
             this.Name = "patient_appointment_panel";
             this.Size = new System.Drawing.Size(1010, 763);
+            this.Load += new System.EventHandler(this.patient_appointment_panel_Load);
             this.main_panel.ResumeLayout(false);
             this.main_panel.PerformLayout();
             this.ResumeLayout(false);
@@ -190,6 +206,8 @@
         #endregion
 
         private System.Windows.Forms.Panel main_panel;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btn_cancel_appointment;
         private System.Windows.Forms.Button btn_change_time;
         private System.Windows.Forms.Button btn_patient_ap_submit;
@@ -198,7 +216,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btn_doctor_select;
     }
 }
