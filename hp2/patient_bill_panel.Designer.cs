@@ -33,9 +33,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbl_service_charge = new System.Windows.Forms.Label();
+            this.lbl_room_charge = new System.Windows.Forms.Label();
+            this.lbl_total_charge = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -89,51 +89,51 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(501, 209);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 30);
+            this.label5.Size = new System.Drawing.Size(52, 30);
             this.label5.TabIndex = 4;
-            this.label5.Text = "invalid";
+            this.label5.Text = "500";
             // 
-            // label6
+            // lbl_service_charge
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 13.8F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(501, 266);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 30);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "invalid";
+            this.lbl_service_charge.AutoSize = true;
+            this.lbl_service_charge.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            this.lbl_service_charge.ForeColor = System.Drawing.Color.White;
+            this.lbl_service_charge.Location = new System.Drawing.Point(501, 266);
+            this.lbl_service_charge.Name = "lbl_service_charge";
+            this.lbl_service_charge.Size = new System.Drawing.Size(93, 30);
+            this.lbl_service_charge.TabIndex = 4;
+            this.lbl_service_charge.Text = "invalid";
             // 
-            // label7
+            // lbl_room_charge
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 13.8F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(501, 323);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 30);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "invalid";
+            this.lbl_room_charge.AutoSize = true;
+            this.lbl_room_charge.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            this.lbl_room_charge.ForeColor = System.Drawing.Color.White;
+            this.lbl_room_charge.Location = new System.Drawing.Point(501, 323);
+            this.lbl_room_charge.Name = "lbl_room_charge";
+            this.lbl_room_charge.Size = new System.Drawing.Size(93, 30);
+            this.lbl_room_charge.TabIndex = 4;
+            this.lbl_room_charge.Text = "invalid";
             // 
-            // label8
+            // lbl_total_charge
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 13.8F);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(501, 380);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(93, 30);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "invalid";
+            this.lbl_total_charge.AutoSize = true;
+            this.lbl_total_charge.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            this.lbl_total_charge.ForeColor = System.Drawing.Color.White;
+            this.lbl_total_charge.Location = new System.Drawing.Point(501, 380);
+            this.lbl_total_charge.Name = "lbl_total_charge";
+            this.lbl_total_charge.Size = new System.Drawing.Size(93, 30);
+            this.lbl_total_charge.TabIndex = 4;
+            this.lbl_total_charge.Text = "invalid";
             // 
             // patient_bill_panel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lbl_total_charge);
+            this.Controls.Add(this.lbl_room_charge);
+            this.Controls.Add(this.lbl_service_charge);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -154,8 +154,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lbl_service_charge;
+        private System.Windows.Forms.Label lbl_room_charge;
+        private System.Windows.Forms.Label lbl_total_charge;
     }
 }

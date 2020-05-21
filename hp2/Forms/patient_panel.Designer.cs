@@ -69,7 +69,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(360, 939);
+            this.panel1.Size = new System.Drawing.Size(340, 939);
             this.panel1.TabIndex = 1;
             // 
             // panel7
@@ -78,7 +78,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 498);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(360, 80);
+            this.panel7.Size = new System.Drawing.Size(340, 80);
             this.panel7.TabIndex = 6;
             // 
             // btn_patient_logout
@@ -90,7 +90,7 @@
             this.btn_patient_logout.ForeColor = System.Drawing.Color.White;
             this.btn_patient_logout.Location = new System.Drawing.Point(0, 0);
             this.btn_patient_logout.Name = "btn_patient_logout";
-            this.btn_patient_logout.Size = new System.Drawing.Size(360, 80);
+            this.btn_patient_logout.Size = new System.Drawing.Size(340, 80);
             this.btn_patient_logout.TabIndex = 0;
             this.btn_patient_logout.Text = "LogOut";
             this.btn_patient_logout.UseVisualStyleBackColor = true;
@@ -103,7 +103,7 @@
             this.panel6.Location = new System.Drawing.Point(0, 418);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(360, 80);
+            this.panel6.Size = new System.Drawing.Size(340, 80);
             this.panel6.TabIndex = 5;
             // 
             // btn_patient_details
@@ -116,7 +116,7 @@
             this.btn_patient_details.Location = new System.Drawing.Point(0, 0);
             this.btn_patient_details.Margin = new System.Windows.Forms.Padding(4);
             this.btn_patient_details.Name = "btn_patient_details";
-            this.btn_patient_details.Size = new System.Drawing.Size(360, 80);
+            this.btn_patient_details.Size = new System.Drawing.Size(340, 80);
             this.btn_patient_details.TabIndex = 0;
             this.btn_patient_details.Text = "Details";
             this.btn_patient_details.UseVisualStyleBackColor = true;
@@ -129,7 +129,7 @@
             this.panel5.Location = new System.Drawing.Point(0, 338);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(360, 80);
+            this.panel5.Size = new System.Drawing.Size(340, 80);
             this.panel5.TabIndex = 4;
             // 
             // btn_patient_bill
@@ -142,7 +142,7 @@
             this.btn_patient_bill.Location = new System.Drawing.Point(0, 0);
             this.btn_patient_bill.Margin = new System.Windows.Forms.Padding(4);
             this.btn_patient_bill.Name = "btn_patient_bill";
-            this.btn_patient_bill.Size = new System.Drawing.Size(360, 80);
+            this.btn_patient_bill.Size = new System.Drawing.Size(340, 80);
             this.btn_patient_bill.TabIndex = 0;
             this.btn_patient_bill.Text = "Bill";
             this.btn_patient_bill.UseVisualStyleBackColor = true;
@@ -155,7 +155,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 258);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(360, 80);
+            this.panel4.Size = new System.Drawing.Size(340, 80);
             this.panel4.TabIndex = 3;
             // 
             // btn_patient_services
@@ -168,7 +168,7 @@
             this.btn_patient_services.Location = new System.Drawing.Point(0, 0);
             this.btn_patient_services.Margin = new System.Windows.Forms.Padding(4);
             this.btn_patient_services.Name = "btn_patient_services";
-            this.btn_patient_services.Size = new System.Drawing.Size(360, 80);
+            this.btn_patient_services.Size = new System.Drawing.Size(340, 80);
             this.btn_patient_services.TabIndex = 0;
             this.btn_patient_services.Text = "Services";
             this.btn_patient_services.UseVisualStyleBackColor = true;
@@ -181,7 +181,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 178);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(360, 80);
+            this.panel3.Size = new System.Drawing.Size(340, 80);
             this.panel3.TabIndex = 2;
             // 
             // btn_patient_appointment
@@ -194,7 +194,7 @@
             this.btn_patient_appointment.Location = new System.Drawing.Point(0, 0);
             this.btn_patient_appointment.Margin = new System.Windows.Forms.Padding(4);
             this.btn_patient_appointment.Name = "btn_patient_appointment";
-            this.btn_patient_appointment.Size = new System.Drawing.Size(360, 80);
+            this.btn_patient_appointment.Size = new System.Drawing.Size(340, 80);
             this.btn_patient_appointment.TabIndex = 0;
             this.btn_patient_appointment.Text = "Appointment";
             this.btn_patient_appointment.UseVisualStyleBackColor = true;
@@ -207,7 +207,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 39);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(360, 139);
+            this.panel2.Size = new System.Drawing.Size(340, 139);
             this.panel2.TabIndex = 1;
             // 
             // pictureBox1
@@ -218,7 +218,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(360, 139);
+            this.pictureBox1.Size = new System.Drawing.Size(340, 139);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -240,10 +240,10 @@
             // patient_panel_right_side
             // 
             this.patient_panel_right_side.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.patient_panel_right_side.Location = new System.Drawing.Point(360, 0);
+            this.patient_panel_right_side.Location = new System.Drawing.Point(340, 0);
             this.patient_panel_right_side.Margin = new System.Windows.Forms.Padding(4);
             this.patient_panel_right_side.Name = "patient_panel_right_side";
-            this.patient_panel_right_side.Size = new System.Drawing.Size(1347, 939);
+            this.patient_panel_right_side.Size = new System.Drawing.Size(1367, 939);
             this.patient_panel_right_side.TabIndex = 2;
             // 
             // patient_panel

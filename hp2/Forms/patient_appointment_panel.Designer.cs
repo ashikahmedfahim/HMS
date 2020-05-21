@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.main_panel = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btn_cancel_appointment = new System.Windows.Forms.Button();
             this.btn_change_time = new System.Windows.Forms.Button();
             this.btn_patient_ap_submit = new System.Windows.Forms.Button();
@@ -37,8 +39,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
             this.main_panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +58,28 @@
             this.main_panel.Name = "main_panel";
             this.main_panel.Size = new System.Drawing.Size(1007, 763);
             this.main_panel.TabIndex = 10;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(215, 295);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(173, 30);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Select Date : ";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(403, 296);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2020, 5, 28, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(2020, 5, 21, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(393, 32);
+            this.dateTimePicker1.TabIndex = 18;
+            this.dateTimePicker1.Value = new System.DateTime(2020, 5, 21, 0, 0, 0, 0);
             // 
             // btn_cancel_appointment
             // 
@@ -93,7 +115,7 @@
             this.btn_patient_ap_submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_patient_ap_submit.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.btn_patient_ap_submit.ForeColor = System.Drawing.Color.White;
-            this.btn_patient_ap_submit.Location = new System.Drawing.Point(657, 421);
+            this.btn_patient_ap_submit.Location = new System.Drawing.Point(657, 401);
             this.btn_patient_ap_submit.Name = "btn_patient_ap_submit";
             this.btn_patient_ap_submit.Size = new System.Drawing.Size(139, 46);
             this.btn_patient_ap_submit.TabIndex = 15;
@@ -104,7 +126,7 @@
             // 
             this.cbox_patient_doc_time.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.cbox_patient_doc_time.FormattingEnabled = true;
-            this.cbox_patient_doc_time.Location = new System.Drawing.Point(403, 301);
+            this.cbox_patient_doc_time.Location = new System.Drawing.Point(403, 348);
             this.cbox_patient_doc_time.Name = "cbox_patient_doc_time";
             this.cbox_patient_doc_time.Size = new System.Drawing.Size(393, 35);
             this.cbox_patient_doc_time.TabIndex = 14;
@@ -123,7 +145,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(215, 301);
+            this.label3.Location = new System.Drawing.Point(215, 349);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(172, 30);
             this.label3.TabIndex = 12;
@@ -150,28 +172,6 @@
             this.label1.Size = new System.Drawing.Size(170, 30);
             this.label1.TabIndex = 10;
             this.label1.Text = "Appointment";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(403, 357);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2020, 5, 28, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(2020, 5, 21, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(393, 32);
-            this.dateTimePicker1.TabIndex = 18;
-            this.dateTimePicker1.Value = new System.DateTime(2020, 5, 21, 0, 0, 0, 0);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(215, 364);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(173, 30);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Select Date : ";
             // 
             // patient_appointment_panel
             // 

@@ -65,8 +65,8 @@ namespace hp2
                 //txtbox_new_address.Text = "";
                 txtbox_new_address.Text = "";
                 txtxbox_new_phone_no.Text = "";
-                patient_details_panel p_d_p2 = new patient_details_panel();
-                p_d_p2.load();
+                //patient_details_panel p_d_p2 = new patient_details_panel();
+                //p_d_p2.load();
                 if (!patient_panel.Instance_4.PnlContainer_4.Controls.ContainsKey("patient_details_panel"))
                 {
                     patient_details_panel p_d_p = new patient_details_panel();
