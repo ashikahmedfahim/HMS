@@ -42,13 +42,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(39, 282);
+            this.label1.Location = new System.Drawing.Point(52, 286);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(386, 30);
+            this.label1.Size = new System.Drawing.Size(364, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Select Service you wants to do:";
+            this.label1.Text = "Select Service you wants to Delete :";
             // 
             // btn_info_1
             // 
@@ -66,11 +66,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(308, 336);
+            this.label2.Location = new System.Drawing.Point(347, 337);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 30);
+            this.label2.Size = new System.Drawing.Size(95, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Charge :";
             // 
@@ -84,7 +84,7 @@
             this.btn_service_submit.Name = "btn_service_submit";
             this.btn_service_submit.Size = new System.Drawing.Size(117, 42);
             this.btn_service_submit.TabIndex = 5;
-            this.btn_service_submit.Text = "Submit";
+            this.btn_service_submit.Text = "DELETE";
             this.btn_service_submit.UseVisualStyleBackColor = true;
             this.btn_service_submit.Click += new System.EventHandler(this.btn_service_submit_Click);
             // 
@@ -94,9 +94,9 @@
             this.btn_info_2.FlatAppearance.BorderSize = 0;
             this.btn_info_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_info_2.Image = ((System.Drawing.Image)(resources.GetObject("btn_info_2.Image")));
-            this.btn_info_2.Location = new System.Drawing.Point(776, 336);
+            this.btn_info_2.Location = new System.Drawing.Point(776, 334);
             this.btn_info_2.Name = "btn_info_2";
-            this.btn_info_2.Size = new System.Drawing.Size(33, 30);
+            this.btn_info_2.Size = new System.Drawing.Size(33, 26);
             this.btn_info_2.TabIndex = 6;
             this.btn_info_2.UseVisualStyleBackColor = true;
             this.btn_info_2.Click += new System.EventHandler(this.btn_info_2_Click);
@@ -104,21 +104,21 @@
             // lbl_charge
             // 
             this.lbl_charge.AutoSize = true;
-            this.lbl_charge.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            this.lbl_charge.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.lbl_charge.ForeColor = System.Drawing.Color.White;
-            this.lbl_charge.Location = new System.Drawing.Point(426, 336);
+            this.lbl_charge.Location = new System.Drawing.Point(448, 337);
             this.lbl_charge.Name = "lbl_charge";
-            this.lbl_charge.Size = new System.Drawing.Size(93, 30);
+            this.lbl_charge.Size = new System.Drawing.Size(74, 23);
             this.lbl_charge.TabIndex = 8;
             this.lbl_charge.Text = "invalid";
             // 
             // comboBox_service
             // 
-            this.comboBox_service.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.comboBox_service.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_service.FormattingEnabled = true;
-            this.comboBox_service.Location = new System.Drawing.Point(431, 283);
+            this.comboBox_service.Location = new System.Drawing.Point(452, 283);
             this.comboBox_service.Name = "comboBox_service";
-            this.comboBox_service.Size = new System.Drawing.Size(339, 31);
+            this.comboBox_service.Size = new System.Drawing.Size(318, 31);
             this.comboBox_service.TabIndex = 12;
             // 
             // btn_show_charge
@@ -127,9 +127,9 @@
             this.btn_show_charge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_show_charge.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_show_charge.ForeColor = System.Drawing.Color.Red;
-            this.btn_show_charge.Location = new System.Drawing.Point(537, 320);
+            this.btn_show_charge.Location = new System.Drawing.Point(577, 324);
             this.btn_show_charge.Name = "btn_show_charge";
-            this.btn_show_charge.Size = new System.Drawing.Size(233, 51);
+            this.btn_show_charge.Size = new System.Drawing.Size(193, 43);
             this.btn_show_charge.TabIndex = 13;
             this.btn_show_charge.Text = "Show Charge";
             this.btn_show_charge.UseVisualStyleBackColor = true;

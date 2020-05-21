@@ -25,31 +25,43 @@ namespace hp2
         {
             InitializeComponent();
         }
-
-        private void patient_bill_panel_Load(object sender, EventArgs e)
+        public void Service_Charge()
         {
             dbobj = new DBAccess();
             dtUser = new DataTable();
-            string query = "select a.ID from USER_INFO, WHERE USER_ID= '" + login.getId() + "'";
+            dbobj.closeConn();
+            string query = "select SUM(C.CHARGE)CHARGE from USER_INFO A,CUS_SER B,SERVICES C WHERE A.USER_ID= '" + login.getId() + "' AND A.ID=B.CID AND B.SID=C.ID";
             SqlDataReader select_info = dbobj.readDatathroughReader(query);
             while (select_info.Read())
             {
-                id = select_info["ID"].ToString();
+                id = select_info["CHARGE"].ToString();
             }
             dbobj.closeConn();
             lbl_service_charge.Text = id;
+        }
 
-            //string idd = id;
-            //string query2 = "select SID from CUS_SER WHERE CID= '" + idd.ToString() + "'";
-            //SqlDataReader select_info2 = dbobj.readDatathroughReader(query2);
-            //while (select_info2.Read())
-            //{
-            //    id2 = select_info["SID"].ToString();
-            //}
-            //dbobj.closeConn();
-            //lbl_service_charge.Text = id;
-            //lbl_room_charge.Text = id2;
+        public void R_charge()
+        {
+            dbobj = new DBAccess();
+            dtUser = new DataTable();
+            dbobj.closeConn();
+            string query2 = "select SUM(C.CHARGE)CHARGE from USER_INFO A,CUS_ROOM B,ROOM C WHERE A.USER_ID= '" + login.getId() + "' AND A.ID=B.CID AND B.RID=C.ID";
+            SqlDataReader select_info2 = dbobj.readDatathroughReader(query2);
+            while (select_info2.Read())
+            {
+                id2 = select_info2["CHARGE"].ToString();
+            }
+            dbobj.closeConn();
+            lbl_room_charge.Text = id2;
 
+        }
+
+        private void patient_bill_panel_Load(object sender, EventArgs e)
+        {
+            Service_Charge();
+            R_charge();
+            int total_charge = int.Parse(id) + int.Parse(id2)+500;
+            lbl_total_charge.Text = total_charge.ToString();
         }
     }
 }
