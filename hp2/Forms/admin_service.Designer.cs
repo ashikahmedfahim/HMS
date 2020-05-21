@@ -42,7 +42,6 @@
             this.txtCharge = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnCharge = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -65,7 +64,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(406, 59);
+            this.label6.Location = new System.Drawing.Point(376, 72);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(201, 24);
@@ -120,7 +119,7 @@
             // btn_ser_clear
             // 
             this.btn_ser_clear.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ser_clear.Location = new System.Drawing.Point(116, 215);
+            this.btn_ser_clear.Location = new System.Drawing.Point(117, 245);
             this.btn_ser_clear.Margin = new System.Windows.Forms.Padding(2);
             this.btn_ser_clear.Name = "btn_ser_clear";
             this.btn_ser_clear.Size = new System.Drawing.Size(58, 32);
@@ -132,7 +131,7 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(258, 215);
+            this.btnDelete.Location = new System.Drawing.Point(259, 245);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(68, 32);
@@ -144,7 +143,7 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(188, 215);
+            this.btnAdd.Location = new System.Drawing.Point(189, 245);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(60, 32);
@@ -158,7 +157,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(43, 174);
+            this.label3.Location = new System.Drawing.Point(44, 204);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 20);
@@ -170,7 +169,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(55, 121);
+            this.label2.Location = new System.Drawing.Point(56, 151);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 20);
@@ -180,7 +179,7 @@
             // txtCharge
             // 
             this.txtCharge.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCharge.Location = new System.Drawing.Point(116, 170);
+            this.txtCharge.Location = new System.Drawing.Point(117, 200);
             this.txtCharge.Margin = new System.Windows.Forms.Padding(2);
             this.txtCharge.Name = "txtCharge";
             this.txtCharge.Size = new System.Drawing.Size(210, 27);
@@ -189,7 +188,7 @@
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(116, 119);
+            this.txtName.Location = new System.Drawing.Point(117, 149);
             this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(210, 27);
@@ -199,10 +198,9 @@
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnID,
             this.ColumnName,
             this.ColumnCharge});
-            this.dataGridView.Location = new System.Drawing.Point(396, 115);
+            this.dataGridView.Location = new System.Drawing.Point(380, 121);
             this.dataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersWidth = 51;
@@ -211,26 +209,18 @@
             this.dataGridView.TabIndex = 43;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
-            // ColumnID
-            // 
-            this.ColumnID.DataPropertyName = "ID";
-            this.ColumnID.HeaderText = "ID";
-            this.ColumnID.Name = "ColumnID";
-            this.ColumnID.Width = 50;
-            // 
             // ColumnName
             // 
             this.ColumnName.DataPropertyName = "Name";
             this.ColumnName.HeaderText = "Name";
             this.ColumnName.Name = "ColumnName";
-            this.ColumnName.Width = 170;
+            this.ColumnName.Width = 200;
             // 
             // ColumnCharge
             // 
             this.ColumnCharge.DataPropertyName = "Charge";
             this.ColumnCharge.HeaderText = "Charge";
             this.ColumnCharge.Name = "ColumnCharge";
-            this.ColumnCharge.Width = 80;
             // 
             // admin_service
             // 
@@ -277,7 +267,6 @@
         private System.Windows.Forms.TextBox txtCharge;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.DataGridView dataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCharge;
     }

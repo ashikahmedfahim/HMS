@@ -13,6 +13,8 @@ namespace hp2
 {
     public partial class admin_room : UserControl
     {
+        DBAccess da;
+        DataTable dt;
         DBAccess dBAccess;
         DataTable datatable;
         string id;
@@ -77,6 +79,16 @@ namespace hp2
             txtRoomNo.Text = dataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtCharge.Text = dataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtAvailability.Text = dataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
+        }
+        public void get()
+        {
+            da = new DBAccess();
+            dt = new DataTable();
+            string query = "select * from ROOM";
+            da.readDatathroughAdapter(query, dt);
+            dataGridView.DataSource = dt;
+            dataGridView.Columns[0].Visible = false;
+            da.closeConn();
         }
     }
 }

@@ -44,7 +44,6 @@
             this.txtCharge = new System.Windows.Forms.TextBox();
             this.txtRoomNo = new System.Windows.Forms.TextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnRoomNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnCharge = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnIsFree = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -220,7 +219,6 @@
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnID,
             this.ColumnRoomNO,
             this.ColumnCharge,
             this.ColumnIsFree});
@@ -233,24 +231,19 @@
             this.dataGridView.TabIndex = 50;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
-            // ColumnID
-            // 
-            this.ColumnID.DataPropertyName = "ID";
-            this.ColumnID.HeaderText = "ID";
-            this.ColumnID.Name = "ColumnID";
-            this.ColumnID.Width = 40;
-            // 
             // ColumnRoomNO
             // 
             this.ColumnRoomNO.DataPropertyName = "ROOM_NO";
             this.ColumnRoomNO.HeaderText = "RoomNo";
             this.ColumnRoomNO.Name = "ColumnRoomNO";
+            this.ColumnRoomNO.Width = 110;
             // 
             // ColumnCharge
             // 
             this.ColumnCharge.DataPropertyName = "CHARGE";
             this.ColumnCharge.HeaderText = "Charge";
             this.ColumnCharge.Name = "ColumnCharge";
+            this.ColumnCharge.Width = 110;
             // 
             // ColumnIsFree
             // 
@@ -307,7 +300,6 @@
         private System.Windows.Forms.TextBox txtCharge;
         private System.Windows.Forms.TextBox txtRoomNo;
         private System.Windows.Forms.DataGridView dataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRoomNO;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCharge;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnIsFree;
