@@ -174,43 +174,33 @@ namespace hp2
             dtUser1 = new DataTable();
             Doctor_ID();
             Customer_ID();
-            string query4 = "SELECT TIME FROM CUS_DOC WHERE DID = '" + get_d_id + "' AND DATE = '" + dateTimePicker1.Value + "'";
+            string query4 = "SELECT TIME FROM CUS_DOC WHERE DID = '" + get_d_id + "' AND DATE = '" + dateTimePicker1.Value + "' ORDER BY TIME ASC";
             dbobj.readDatathroughAdapter(query4, dtUser1);
             if (dtUser1.Rows.Count >= 1)
             {
-                //get_time = dtUser1.Rows[0]["TIME"].ToString();
-                //check();
-
                 int count = dtUser1.Rows.Count;
-                for (int i = 0; i < count; i++)
+                int[] arr = new int[8];
+                for (int m = 0; m < 8; m++)
                 {
-                    get_time = dtUser1.Rows[i]["TIME"].ToString();
+                    arr[m] = m + 1;
+                }
+                for (int k = 0; k < count; k++)
+                {
+                    get_time = dtUser1.Rows[k]["TIME"].ToString();
                     int a = Convert.ToInt32(get_time);
-                    for (int j = 1; j <= 8; j++)
+                    for (int l = 1; l <= 8; l++)
                     {
-                        if (j != a)
+                        if (arr[l - 1] == a)
                         {
-                            check(a);
-                            break;
+                            arr[l - 1] = 0;
                         }
                     }
                 }
 
-                //for (int i = 0; i < count; i++)
-                //{
-                //    get_time = dtUser1.Rows[0]["TIME"].ToString();
-                //    //get_date = dtUser1.Rows[0]["TIME"].ToString();
-                //    cbox_patient_doc_time.Items.Clear();
-                //    check();
-                //    count--;
-                //}
-
-                //count--;
-                //if (count > 0)
-                //{
-
-                //    count--;
-                //}
+                foreach (int i in arr)
+                {
+                    check(i);
+                }
             }
             else
             {
