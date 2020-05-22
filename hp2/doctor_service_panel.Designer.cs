@@ -36,6 +36,7 @@
             this.comboBoxName = new System.Windows.Forms.ComboBox();
             this.comboBoxService = new System.Windows.Forms.ComboBox();
             this.comboBoxRoom = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -43,7 +44,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(137, 196);
+            this.label1.Location = new System.Drawing.Point(52, 245);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(5);
             this.label1.Size = new System.Drawing.Size(195, 38);
@@ -55,7 +56,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(313, 62);
+            this.label2.Location = new System.Drawing.Point(319, 60);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(5);
             this.label2.Size = new System.Drawing.Size(117, 38);
@@ -67,7 +68,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(137, 275);
+            this.label3.Location = new System.Drawing.Point(52, 324);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(42, 5, 42, 5);
             this.label3.Size = new System.Drawing.Size(191, 38);
@@ -79,7 +80,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label4.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(137, 355);
+            this.label4.Location = new System.Drawing.Point(52, 404);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(52, 5, 52, 5);
             this.label4.Size = new System.Drawing.Size(194, 38);
@@ -89,18 +90,19 @@
             // SaveButton
             // 
             this.SaveButton.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButton.Location = new System.Drawing.Point(474, 451);
+            this.SaveButton.Location = new System.Drawing.Point(561, 401);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(130, 37);
             this.SaveButton.TabIndex = 7;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // comboBoxName
             // 
             this.comboBoxName.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxName.FormattingEnabled = true;
-            this.comboBoxName.Location = new System.Drawing.Point(374, 198);
+            this.comboBoxName.Location = new System.Drawing.Point(289, 247);
             this.comboBoxName.Name = "comboBoxName";
             this.comboBoxName.Size = new System.Drawing.Size(230, 36);
             this.comboBoxName.TabIndex = 8;
@@ -110,7 +112,7 @@
             // 
             this.comboBoxService.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxService.FormattingEnabled = true;
-            this.comboBoxService.Location = new System.Drawing.Point(374, 272);
+            this.comboBoxService.Location = new System.Drawing.Point(289, 321);
             this.comboBoxService.Name = "comboBoxService";
             this.comboBoxService.Size = new System.Drawing.Size(230, 36);
             this.comboBoxService.TabIndex = 9;
@@ -119,16 +121,28 @@
             // 
             this.comboBoxRoom.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxRoom.FormattingEnabled = true;
-            this.comboBoxRoom.Location = new System.Drawing.Point(374, 352);
+            this.comboBoxRoom.Location = new System.Drawing.Point(289, 401);
             this.comboBoxRoom.Name = "comboBoxRoom";
             this.comboBoxRoom.Size = new System.Drawing.Size(230, 36);
             this.comboBoxRoom.TabIndex = 10;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(561, 321);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 37);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // doctor_service_panel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBoxRoom);
             this.Controls.Add(this.comboBoxService);
             this.Controls.Add(this.comboBoxName);
@@ -154,5 +168,6 @@
         private System.Windows.Forms.ComboBox comboBoxName;
         private System.Windows.Forms.ComboBox comboBoxService;
         private System.Windows.Forms.ComboBox comboBoxRoom;
+        private System.Windows.Forms.Button button1;
     }
 }

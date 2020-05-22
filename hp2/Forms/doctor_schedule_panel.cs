@@ -44,67 +44,116 @@ namespace hp2
             }
         }
 
+        private string getDoctorId()
+        {
+            DBAccess dbobjy = new DBAccess();
+            DataTable dtUsery = new DataTable();
+            string query = ("SELECT ID FROM USER_INFO WHERE USER_ID='" + login.getId() + "'");
+            dbobjy.readDatathroughAdapter(query, dtUsery);
+            if (dtUsery.Rows.Count == 1)
+            {
+                return dtUsery.Rows[0]["ID"].ToString();
+            }
+            else
+            {
+                return "";
+            }
+        }
+        private string getPatientName(string x)
+        {
+            DBAccess dbobjx = new DBAccess();
+            DataTable dtUserx = new DataTable();
+            string query = "SELECT NAME FROM USER_INFO WHERE ID='" + x + "'";
+            dbobjx.readDatathroughAdapter(query, dtUserx);
+            if (dtUserx.Rows.Count == 1)
+            {
+                return dtUserx.Rows[0]["NAME"].ToString();
+            }
+            else
+            {
+                return "Not Found";
+            }
+        }
+
         public void load()
         {
+
             dbobj = new DBAccess();
             dtUser = new DataTable();
-            string query = ("SELECT * FROM USER_INFO WHERE USER_ID = '" + login.getId() + "'");
+            string x = "";
+            string query = "SELECT CID,TIME FROM CUS_DOC WHERE DID = '" + getDoctorId() + "' AND DATE  = '"+dateTimePicker1.Value.ToString()+"'";
             dbobj.readDatathroughAdapter(query, dtUser);
-            if (dtUser.Rows.Count == 1)
+            int i = 0;
+            foreach (DataRow dr in dtUser.Rows)
             {
-                string id= dtUser.Rows[0]["ID"].ToString();
-                textBox1.Text = dtUser.Rows[0]["TIMING"].ToString();
+                x = dr["CID"].ToString();
+                string y = getPatientName(x);
+                i++;
+            }
+
+
+
+            DBAccess dbobj11 = new DBAccess();
+            DataTable dtUser11 = new DataTable();
+            dbobj = new DBAccess();
+            dtUser = new DataTable();
+            string query2 = ("SELECT * FROM USER_INFO WHERE USER_ID = '" + login.getId() + "'");
+            dbobj11.readDatathroughAdapter(query2, dtUser11);
+            if (dtUser11.Rows.Count == 1)
+            {
+                string id= dtUser11.Rows[0]["ID"].ToString();
+                textBox1.Text = dtUser11.Rows[0]["TIMING"].ToString();
                 date = dateTimePicker1.Value.ToString();
                 getDid = id;
-                string query2 = ("SELECT * FROM CUS_DOC WHERE DID = '" + id + "' AND DATE = '"+date+"' AND IS_CANCEL = '"+"0"+"' ORDER BY  TIME ASC");
-                dbobj.readDatathroughAdapter(query2, dtUser);
+                string query22 = ("SELECT * FROM CUS_DOC WHERE DID = '" + id + "' AND DATE = '"+date+"' AND IS_CANCEL = '"+"0"+"' ORDER BY  TIME ASC");
+                dbobj.readDatathroughAdapter(query22, dtUser);
                 if (dtUser.Rows.Count >= 1) {
                     int count = dtUser.Rows.Count;
-                    for (int i=0;i<count;i++) { 
-                        string x= dtUser.Rows[i]["TIME"].ToString();
-                        timeVal[i]=x;
+                    for (int i1=0;i1<count;i1++) { 
+                        string z= dtUser.Rows[i1]["TIME"].ToString();
+                        timeVal[i]=z;
                     }
                     textBox2.Text = getNameData(0);
                     textBox3.Text= dtUser.Rows[0]["TIME"].ToString();
                     count--;
                     if (count >0) {
-                        textBox4.Text = getNameData(1);
+                        textBox4.Text = getPatientName(x);
                         textBox11.Text = dtUser.Rows[1]["TIME"].ToString();
                         count--;
                     }
                     if (count > 0)
                     {
-                        textBox5.Text = getNameData(2);
+                        textBox5.Text = getPatientName(x);
                         textBox12.Text = dtUser.Rows[2]["TIME"].ToString();
                         count--;
                     }
                     if (count > 0)
                     {
-                        textBox6.Text = getNameData(3);
+                        textBox6.Text = getPatientName(x);
                         textBox13.Text = dtUser.Rows[3]["TIME"].ToString();
                         count--;
                     }
                     if (count > 0)
                     {
-                        textBox7.Text = getNameData(4);
+                        textBox7.Text = getPatientName(x);
                         textBox14.Text = dtUser.Rows[4]["TIME"].ToString();
                         count--;
                     }
                     if (count > 0)
                     {
-                        textBox8.Text = getNameData(5);
+                        textBox8.Text = getPatientName(x);
                         textBox15.Text = dtUser.Rows[5]["TIME"].ToString();
                         count--;
                     }
                     if (count > 0)
                     {
-                        textBox9.Text = getNameData(6);
+                        textBox9.Text = getPatientName(x);
                         textBox16.Text = dtUser.Rows[6]["TIME"].ToString();
                         count--;
                     }
                     if (count > 0)
                     {
-                        textBox10.Text = getNameData(7);
+                        textBox10.Text = getPatientName(x);
                         textBox17.Text = dtUser.Rows[7]["TIME"].ToString();
                         count--;
                     }
