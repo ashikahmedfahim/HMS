@@ -33,11 +33,6 @@ namespace hp2
 
         }
 
-        private void dGv_admin_patient_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void admin_patient_Load(object sender, EventArgs e)
         {
             get();
@@ -66,8 +61,13 @@ namespace hp2
             dataGridView1.Columns[2].Visible = false;
             da1.closeConn();
         }
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            abc();
+            GetPatient();
+        }
 
-        private void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             patientID = dataGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
             cmbDoctorName.Items.Clear();
@@ -97,17 +97,6 @@ namespace hp2
                 id = reader["ID"].ToString();
             }
             da3.closeConn();
-        }
-
-        private void cmbDoctorName_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            abc();
-            GetPatient();
         }
     }
 }
