@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.main_panel = new System.Windows.Forms.Panel();
+            this.btn_doctor_select = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btn_cancel_appointment = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_doctor_select = new System.Windows.Forms.Button();
             this.main_panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,19 @@
             this.main_panel.Size = new System.Drawing.Size(1007, 760);
             this.main_panel.TabIndex = 10;
             // 
+            // btn_doctor_select
+            // 
+            this.btn_doctor_select.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_doctor_select.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_doctor_select.ForeColor = System.Drawing.Color.White;
+            this.btn_doctor_select.Location = new System.Drawing.Point(685, 248);
+            this.btn_doctor_select.Name = "btn_doctor_select";
+            this.btn_doctor_select.Size = new System.Drawing.Size(111, 33);
+            this.btn_doctor_select.TabIndex = 20;
+            this.btn_doctor_select.Text = "Select";
+            this.btn_doctor_select.UseVisualStyleBackColor = true;
+            this.btn_doctor_select.Click += new System.EventHandler(this.btn_doctor_select_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -74,7 +87,9 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(403, 296);
             this.dateTimePicker1.MaxDate = new System.DateTime(2020, 5, 28, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(2020, 5, 21, 0, 0, 0, 0);
@@ -121,8 +136,9 @@
             this.btn_patient_ap_submit.Name = "btn_patient_ap_submit";
             this.btn_patient_ap_submit.Size = new System.Drawing.Size(139, 46);
             this.btn_patient_ap_submit.TabIndex = 15;
-            this.btn_patient_ap_submit.Text = "Submit";
+            this.btn_patient_ap_submit.Text = "Confirm";
             this.btn_patient_ap_submit.UseVisualStyleBackColor = true;
+            this.btn_patient_ap_submit.Click += new System.EventHandler(this.btn_patient_ap_submit_Click);
             // 
             // cbox_patient_doc_time
             // 
@@ -174,19 +190,6 @@
             this.label1.Size = new System.Drawing.Size(170, 30);
             this.label1.TabIndex = 10;
             this.label1.Text = "Appointment";
-            // 
-            // btn_doctor_select
-            // 
-            this.btn_doctor_select.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_doctor_select.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_doctor_select.ForeColor = System.Drawing.Color.White;
-            this.btn_doctor_select.Location = new System.Drawing.Point(685, 248);
-            this.btn_doctor_select.Name = "btn_doctor_select";
-            this.btn_doctor_select.Size = new System.Drawing.Size(111, 33);
-            this.btn_doctor_select.TabIndex = 20;
-            this.btn_doctor_select.Text = "Select";
-            this.btn_doctor_select.UseVisualStyleBackColor = true;
-            this.btn_doctor_select.Click += new System.EventHandler(this.btn_doctor_select_Click);
             // 
             // patient_appointment_panel
             // 
