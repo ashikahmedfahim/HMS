@@ -68,10 +68,7 @@ namespace hp2
                     textBox3.Text= dtUser.Rows[0]["TIME"].ToString();
                     count--;
                     if (count >0) {
-                        if (dtUser.Rows.Count == 1)
-                        {
-                            textBox4.Text = getNameData(1);
-                        }
+                        textBox4.Text = getNameData(1);
                         textBox11.Text = dtUser.Rows[1]["TIME"].ToString();
                         count--;
                     }
