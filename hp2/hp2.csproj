@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBAccess.cs" />
+    <Compile Include="doctor_service_panel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="doctor_service_panel.Designer.cs">
+      <DependentUpon>doctor_service_panel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\admin_add_new_doctor.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -225,6 +231,9 @@
     <Compile Include="Forms\UserControl2.Designer.cs">
       <DependentUpon>UserControl2.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="doctor_service_panel.resx">
+      <DependentUpon>doctor_service_panel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\admin_add_new_doctor.resx">
       <DependentUpon>admin_add_new_doctor.cs</DependentUpon>
     </EmbeddedResource>

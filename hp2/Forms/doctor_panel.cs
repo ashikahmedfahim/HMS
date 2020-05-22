@@ -107,5 +107,14 @@ namespace hp2
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            _obj3 = this;
+            doctor_service_panel dsp = new doctor_service_panel();
+            dsp.Dock = DockStyle.Fill;
+            doctor_panel_rightSide.Controls.Add(dsp);
+            doctor_panel_rightSide.Controls["doctor_service_panel"].BringToFront();
+        }
     }
 }
