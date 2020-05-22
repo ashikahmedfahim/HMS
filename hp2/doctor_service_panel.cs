@@ -17,5 +17,14 @@ namespace hp2
             InitializeComponent();
         }
 
+        private void comboBoxName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void doctor_service_panel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
