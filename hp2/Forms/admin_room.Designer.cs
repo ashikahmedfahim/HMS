@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtNewAvailability = new System.Windows.Forms.TextBox();
+            this.cmbAvailability2 = new System.Windows.Forms.ComboBox();
+            this.cmbAvailability1 = new System.Windows.Forms.ComboBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtAvailability = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNewCharge = new System.Windows.Forms.TextBox();
@@ -50,25 +51,45 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtNewAvailability
+            // cmbAvailability2
             // 
-            this.txtNewAvailability.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewAvailability.Location = new System.Drawing.Point(105, 466);
-            this.txtNewAvailability.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNewAvailability.Name = "txtNewAvailability";
-            this.txtNewAvailability.Size = new System.Drawing.Size(211, 27);
-            this.txtNewAvailability.TabIndex = 67;
+            this.cmbAvailability2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbAvailability2.FormattingEnabled = true;
+            this.cmbAvailability2.Location = new System.Drawing.Point(102, 445);
+            this.cmbAvailability2.Name = "cmbAvailability2";
+            this.cmbAvailability2.Size = new System.Drawing.Size(209, 28);
+            this.cmbAvailability2.TabIndex = 87;
+            // 
+            // cmbAvailability1
+            // 
+            this.cmbAvailability1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbAvailability1.FormattingEnabled = true;
+            this.cmbAvailability1.Location = new System.Drawing.Point(103, 198);
+            this.cmbAvailability1.Name = "cmbAvailability1";
+            this.cmbAvailability1.Size = new System.Drawing.Size(209, 28);
+            this.cmbAvailability1.TabIndex = 86;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.Location = new System.Drawing.Point(666, 532);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(74, 32);
+            this.btnRefresh.TabIndex = 85;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(16, 466);
+            this.label7.Location = new System.Drawing.Point(13, 445);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(85, 20);
-            this.label7.TabIndex = 66;
+            this.label7.TabIndex = 84;
             this.label7.Text = "Availability:";
             // 
             // label6
@@ -76,32 +97,23 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(10, 221);
+            this.label6.Location = new System.Drawing.Point(7, 200);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 20);
-            this.label6.TabIndex = 65;
+            this.label6.TabIndex = 83;
             this.label6.Text = "Availability :";
-            // 
-            // txtAvailability
-            // 
-            this.txtAvailability.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAvailability.Location = new System.Drawing.Point(106, 214);
-            this.txtAvailability.Margin = new System.Windows.Forms.Padding(2);
-            this.txtAvailability.Name = "txtAvailability";
-            this.txtAvailability.Size = new System.Drawing.Size(210, 27);
-            this.txtAvailability.TabIndex = 64;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(101, 379);
+            this.label5.Location = new System.Drawing.Point(98, 358);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 24);
-            this.label5.TabIndex = 63;
+            this.label5.TabIndex = 82;
             this.label5.Text = "Update :";
             // 
             // label4
@@ -109,80 +121,76 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(-3, 420);
+            this.label4.Location = new System.Drawing.Point(-6, 399);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 20);
-            this.label4.TabIndex = 62;
+            this.label4.TabIndex = 81;
             this.label4.Text = "New Charge :";
             // 
             // txtNewCharge
             // 
             this.txtNewCharge.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewCharge.Location = new System.Drawing.Point(105, 416);
+            this.txtNewCharge.Location = new System.Drawing.Point(102, 395);
             this.txtNewCharge.Margin = new System.Windows.Forms.Padding(2);
             this.txtNewCharge.Name = "txtNewCharge";
             this.txtNewCharge.Size = new System.Drawing.Size(211, 27);
-            this.txtNewCharge.TabIndex = 61;
+            this.txtNewCharge.TabIndex = 80;
             // 
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(241, 505);
+            this.btnUpdate.Location = new System.Drawing.Point(238, 507);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(74, 32);
-            this.btnUpdate.TabIndex = 60;
+            this.btnUpdate.TabIndex = 79;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(106, 263);
+            this.btnClear.Location = new System.Drawing.Point(103, 264);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(58, 32);
-            this.btnClear.TabIndex = 59;
+            this.btnClear.TabIndex = 78;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(248, 263);
+            this.btnDelete.Location = new System.Drawing.Point(245, 264);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(68, 32);
-            this.btnDelete.TabIndex = 58;
+            this.btnDelete.TabIndex = 77;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(178, 263);
+            this.btnAdd.Location = new System.Drawing.Point(175, 264);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(60, 32);
-            this.btnAdd.TabIndex = 57;
+            this.btnAdd.TabIndex = 76;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(25, 166);
+            this.label3.Location = new System.Drawing.Point(22, 145);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 20);
-            this.label3.TabIndex = 54;
+            this.label3.TabIndex = 74;
             this.label3.Text = "Charge :";
             // 
             // label2
@@ -190,30 +198,30 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(10, 115);
+            this.label2.Location = new System.Drawing.Point(7, 94);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 20);
-            this.label2.TabIndex = 56;
+            this.label2.TabIndex = 75;
             this.label2.Text = "Room No :";
             // 
             // txtCharge
             // 
             this.txtCharge.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCharge.Location = new System.Drawing.Point(106, 162);
+            this.txtCharge.Location = new System.Drawing.Point(103, 141);
             this.txtCharge.Margin = new System.Windows.Forms.Padding(2);
             this.txtCharge.Name = "txtCharge";
             this.txtCharge.Size = new System.Drawing.Size(210, 27);
-            this.txtCharge.TabIndex = 53;
+            this.txtCharge.TabIndex = 73;
             // 
             // txtRoomNo
             // 
             this.txtRoomNo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRoomNo.Location = new System.Drawing.Point(106, 111);
+            this.txtRoomNo.Location = new System.Drawing.Point(103, 90);
             this.txtRoomNo.Margin = new System.Windows.Forms.Padding(2);
             this.txtRoomNo.Name = "txtRoomNo";
             this.txtRoomNo.Size = new System.Drawing.Size(210, 27);
-            this.txtRoomNo.TabIndex = 52;
+            this.txtRoomNo.TabIndex = 72;
             // 
             // dataGridView
             // 
@@ -222,14 +230,13 @@
             this.ColumnRoomNO,
             this.ColumnCharge,
             this.ColumnIsFree});
-            this.dataGridView.Location = new System.Drawing.Point(375, 108);
+            this.dataGridView.Location = new System.Drawing.Point(372, 87);
             this.dataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.RowTemplate.Height = 24;
             this.dataGridView.Size = new System.Drawing.Size(368, 426);
-            this.dataGridView.TabIndex = 50;
-            this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
+            this.dataGridView.TabIndex = 71;
             // 
             // ColumnRoomNO
             // 
@@ -256,10 +263,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
-            this.Controls.Add(this.txtNewAvailability);
+            this.Controls.Add(this.cmbAvailability2);
+            this.Controls.Add(this.cmbAvailability1);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtAvailability);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtNewCharge);
@@ -284,10 +292,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtNewAvailability;
+        private System.Windows.Forms.ComboBox cmbAvailability2;
+        private System.Windows.Forms.ComboBox cmbAvailability1;
+        private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtAvailability;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNewCharge;
