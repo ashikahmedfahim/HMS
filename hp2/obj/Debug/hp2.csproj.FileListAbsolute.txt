@@ -226,3 +226,4 @@ C:\Users\Hp\Desktop\New folder\HMS\hp2\obj\Debug\hp2.patient_app_time_change_pan
 C:\Users\Hp\Desktop\New folder\HMS\hp2\obj\Debug\hp2.patient_bill_panel.resources
 C:\Users\Hp\Desktop\New folder\HMS\hp2\obj\Debug\hp2.patient_password_change.resources
 C:\Users\Hp\Desktop\New folder\HMS\hp2\obj\Debug\hp2.doctor_service_panel.resources
+C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.doctor_service_panel.resources

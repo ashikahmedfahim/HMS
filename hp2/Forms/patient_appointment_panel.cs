@@ -14,14 +14,13 @@ namespace hp2
     public partial class patient_appointment_panel : UserControl
     {
         DBAccess dbobj;
-        DataTable dtUser;
-        string time, dname, get_d_id, get_customer_id;
+        DataTable dtUser, dtUser1;
+        string time, dname, get_d_id, get_customer_id, get_time;
         string c, d, e, f, g, h, i, j;
-        int set_time;
+        int set_time, id;
         public patient_appointment_panel()
         {
             InitializeComponent();
-
         }
 
         private void btn_change_time_Click(object sender, EventArgs e)
@@ -72,6 +71,7 @@ namespace hp2
                 cbox_patient_doc_time.Text = "";
                 //btn_refresh.Visible = true;
                 load();
+                timeget(dname);
             }
             else
             {
@@ -104,6 +104,7 @@ namespace hp2
         }
         public void timeget(string name)
         {
+            cbox_patient_doc_time.Items.Clear();
             dbobj = new DBAccess();
             dtUser = new DataTable();
             string query2 = "SELECT TIMING FROM USER_INFO WHERE NAME = '" + name + "'";
@@ -123,9 +124,101 @@ namespace hp2
             h = (b + 1).ToString() + ":15" + "--" + (b + 1).ToString() + ":30";
             i = (b + 1).ToString() + ":30" + "--" + (b + 1).ToString() + ":45";
             j = (b + 1).ToString() + ":45" + "--" + (b + 2).ToString() + ":00";
-
-            cbox_patient_doc_time.Items.AddRange(new object[] { c, d, e, f, g, h, i, j });
+            //   cbox_patient_doc_time.Items.AddRange(new object[] { c, d, e, f, g, h, i, j });
             dbobj.closeConn();
+            maintimeset();
+        }
+
+        public void check(int id2)
+        {
+            if (id2 == 1)
+            {
+                cbox_patient_doc_time.Items.AddRange(new object[] { c });
+            }
+            else if (id2 == 2)
+            {
+                cbox_patient_doc_time.Items.AddRange(new object[] { d });
+            }
+            else if (id2 == 3)
+            {
+                cbox_patient_doc_time.Items.AddRange(new object[] { e });
+            }
+            else if (id2 == 4)
+            {
+                cbox_patient_doc_time.Items.AddRange(new object[] { f });
+            }
+            else if (id2 == 5)
+            {
+                cbox_patient_doc_time.Items.AddRange(new object[] { g });
+            }
+            else if (id2 == 6)
+            {
+                cbox_patient_doc_time.Items.AddRange(new object[] { h });
+            }
+            else if (id2 == 7)
+            {
+                cbox_patient_doc_time.Items.AddRange(new object[] { i });
+            }
+            else if (id2 == 8)
+            {
+                cbox_patient_doc_time.Items.AddRange(new object[] { j });
+            }
+            //else
+            //{
+            //    cbox_patient_doc_time.Items.AddRange(new object[] { c, d, e, f, g, h, i, j });
+            //}
+        }
+        public void maintimeset()
+        {
+            dbobj = new DBAccess();
+            dtUser1 = new DataTable();
+            Doctor_ID();
+            Customer_ID();
+            string query4 = "SELECT TIME FROM CUS_DOC WHERE DID = '" + get_d_id + "' AND DATE = '" + dateTimePicker1.Value + "'";
+            dbobj.readDatathroughAdapter(query4, dtUser1);
+            if (dtUser1.Rows.Count >= 1)
+            {
+                //get_time = dtUser1.Rows[0]["TIME"].ToString();
+                //check();
+
+                int count = dtUser1.Rows.Count;
+                for (int i = 0; i < count; i++)
+                {
+                    get_time = dtUser1.Rows[i]["TIME"].ToString();
+                    int a = Convert.ToInt32(get_time);
+                    for (int j = 1; j <= 8; j++)
+                    {
+                        if (j != a)
+                        {
+                            check(a);
+                            break;
+                        }
+                    }
+                }
+
+                //for (int i = 0; i < count; i++)
+                //{
+                //    get_time = dtUser1.Rows[0]["TIME"].ToString();
+                //    //get_date = dtUser1.Rows[0]["TIME"].ToString();
+                //    cbox_patient_doc_time.Items.Clear();
+                //    check();
+                //    count--;
+                //}
+
+                //count--;
+                //if (count > 0)
+                //{
+
+                //    count--;
+                //}
+            }
+            else
+            {
+                cbox_patient_doc_time.Items.AddRange(new object[] { c, d, e, f, g, h, i, j });
+            }
+
+            dbobj.closeConn();
+
         }
         public void load()
         {
@@ -138,7 +231,7 @@ namespace hp2
             {
                 cbox_patient_doc_name.Items.Add(dr["NAME"].ToString());
             }
-            dbobj.closeConn();
+
 
             ///////////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\\\\\\\\\\\\\\\
             //dbobj = new DBAccess();
@@ -150,12 +243,12 @@ namespace hp2
         {
             if (cbox_patient_doc_name.SelectedIndex > 0 || cbox_patient_doc_name.SelectedIndex == 0)
             {
+                cbox_patient_doc_time.Items.Clear();
                 dname = cbox_patient_doc_name.SelectedItem.ToString();
                 timeget(dname);
             }
             else
             {
-
                 MessageBox.Show("Please select doctor");
                 patient_panel.Instance_4.PnlContainer_4.Controls["patient_appointment_panel"].BringToFront();
             }
