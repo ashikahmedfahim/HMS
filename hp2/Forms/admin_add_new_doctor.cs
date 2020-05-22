@@ -66,6 +66,14 @@ namespace hp2
                     if (success == 1)
                     {
                         MessageBox.Show("Inserted");
+
+                        txtDoctorID.Text = "";
+                        txtName.Text = "";
+                        txtAddress.Text = "";
+                        txtPhone.Text = "";
+                        txtTiming.Text = "";
+                        txtPassword.Text = "";
+                        txtConfirmPassword.Text = "";
                     }
                     else
                     {
