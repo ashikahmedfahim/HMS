@@ -230,3 +230,4 @@ C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.doctor_service_panel.resour
 C:\Users\USER\Documents\GitHub\HMS\hp2\obj\Debug\hp2.doctor_service_panel.resources
 C:\Users\Hp\Desktop\New folder\HMS\hp2\obj\Debug\hp2.Forget_pass_panel.resources
 C:\Users\ASUS\Documents\GitHub\HMS\hp2\obj\Debug\hp2.Forget_pass_panel.resources
+C:\Users\USER\Documents\GitHub\HMS\hp2\obj\Debug\hp2.Forget_pass_panel.resources

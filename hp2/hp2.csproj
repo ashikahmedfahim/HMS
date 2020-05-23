@@ -187,6 +187,12 @@
     <Compile Include="Forms\patient_service_panel.Designer.cs">
       <DependentUpon>patient_service_panel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Test.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
     <Compile Include="patient _info_change.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -305,6 +311,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\patient_service_panel.resx">
       <DependentUpon>patient_service_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="patient _info_change.resx">
       <DependentUpon>patient _info_change.cs</DependentUpon>

@@ -23,6 +23,8 @@ namespace hp2
         string patientID;
         string doctorID;
         string id;
+        string date, cancel, payment;
+
         public admin_patient()
         {
             InitializeComponent();
@@ -52,22 +54,48 @@ namespace hp2
         public void GetPatient()
         {
             da1 = new DBAccess();
-            dt1 = new DataTable();
             string query = "SELECT * FROM CUS_DOC WHERE CID = '" + patientID + "' AND DID = '" + id + "'";
-            da1.readDatathroughAdapter(query, dt1);
-            dataGridView1.DataSource = dt1;
-            dataGridView1.Columns[0].Visible = false;
-            dataGridView1.Columns[1].Visible = false;
-            dataGridView1.Columns[2].Visible = false;
+            SqlDataReader reader = da1.readDatathroughReader(query);
+            while (reader.Read())
+            {
+                date = reader["DATE"].ToString();
+                cancel = reader["IS_CANCEL"].ToString();
+                payment = reader["IS_PAID"].ToString();
+            }
             da1.closeConn();
         }
+
         private void btnSearch_Click(object sender, EventArgs e)
         {
             abc();
             GetPatient();
+
+            lblDate.Text = date;
+
+            if (cancel == "1")
+            {
+                lblCancel.Text = "Canceled";
+            }
+            else
+            {
+                lblCancel.Text = "Allowed";
+            }
+            if (payment == "1")
+            {
+                lblPayment.Text = "Paid";
+            }
+            else
+            {
+                lblPayment.Text = "Not Paid";
+            }
         }
 
         private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             patientID = dataGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
             cmbDoctorName.Items.Clear();
