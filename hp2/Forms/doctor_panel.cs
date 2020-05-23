@@ -103,11 +103,17 @@ namespace hp2
 
         private void button1_Click_2(object sender, EventArgs e)
         {
+            //_obj3 = this;
+            //doctor_schedule_panel dsp = new doctor_schedule_panel(user_id);
+            //dsp.Dock = DockStyle.Fill;
+            //doctor_panel_rightSide.Controls.Add(dsp);
+            
             _obj3 = this;
-            doctor_schedule_panel dsp = new doctor_schedule_panel(user_id);
-            dsp.Dock = DockStyle.Fill;
-            doctor_panel_rightSide.Controls.Add(dsp);
-            doctor_panel_rightSide.Controls["doctor_schedule_panel"].BringToFront();
+            Test tst = new Test(user_id);
+            tst.Dock = DockStyle.Fill;
+            doctor_panel_rightSide.Controls.Add(tst);
+           // doctor_panel_rightSide.Controls["doctor_schedule_panel"].BringToFront();
+            doctor_panel_rightSide.Controls["Test"].BringToFront();
 
         }
 

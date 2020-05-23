@@ -177,8 +177,11 @@ namespace hp2
                 return "";
             }
         }
-
         private void SaveButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Room Added");
+        }
+            private void SaveButton_Click1(object sender, EventArgs e)
         {
             DBAccess dba = new DBAccess();
             string patientId = "";

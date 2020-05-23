@@ -1,4 +1,4 @@
-﻿namespace hp2.Forms
+﻿namespace hp2
 {
     partial class Test
     {

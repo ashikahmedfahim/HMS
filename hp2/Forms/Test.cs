@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace hp2.Forms
+namespace hp2
 {
     public partial class Test : UserControl
     {
@@ -30,6 +30,8 @@ namespace hp2.Forms
 
         private void Test_Load(object sender, EventArgs e)
         {
+            //dataGridView1.DataSource = null;
+            //dataGridView2.DataSource = null;
             da = new DBAccess();
             string query = "select* from USER_INFO WHERE USER_ID = '" + id + "'";
             SqlDataReader reader = da.readDatathroughReader(query);
@@ -39,6 +41,7 @@ namespace hp2.Forms
             }
             lblTiming.Text = timing;
             da.closeConn();
+
             //getdid();
         }
         public void getdid()
