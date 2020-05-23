@@ -56,12 +56,20 @@ namespace hp2
 
         }
 
-        private void patient_bill_panel_Load(object sender, EventArgs e)
+        private void btn_refresh_Click(object sender, EventArgs e)
+        {
+            load();
+        }
+        public void load()
         {
             Service_Charge();
             R_charge();
-            int total_charge = int.Parse(id) + int.Parse(id2)+500;
+            int total_charge = int.Parse(id) + int.Parse(id2) + 500;
             lbl_total_charge.Text = total_charge.ToString();
+        }
+        private void patient_bill_panel_Load(object sender, EventArgs e)
+        {
+            load();
         }
     }
 }

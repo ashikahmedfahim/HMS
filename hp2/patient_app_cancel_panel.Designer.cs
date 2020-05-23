@@ -51,6 +51,7 @@
             this.btn_doctor_select.TabIndex = 40;
             this.btn_doctor_select.Text = "Select";
             this.btn_doctor_select.UseVisualStyleBackColor = true;
+            this.btn_doctor_select.Click += new System.EventHandler(this.btn_doctor_select_Click_1);
             // 
             // label4
             // 
@@ -90,6 +91,7 @@
             this.btn_patient_ap_delete.TabIndex = 37;
             this.btn_patient_ap_delete.Text = "Confirm";
             this.btn_patient_ap_delete.UseVisualStyleBackColor = true;
+            this.btn_patient_ap_delete.Click += new System.EventHandler(this.btn_patient_ap_delete_Click_1);
             // 
             // cbox_patient_doc_time
             // 
@@ -139,12 +141,13 @@
             this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_back.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_back.ForeColor = System.Drawing.Color.White;
-            this.btn_back.Location = new System.Drawing.Point(816, 720);
+            this.btn_back.Location = new System.Drawing.Point(710, 703);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(82, 32);
             this.btn_back.TabIndex = 32;
             this.btn_back.Text = "Back";
             this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click_1);
             // 
             // lbl_p_app_t_c
             // 
@@ -174,6 +177,7 @@
             this.Controls.Add(this.lbl_p_app_t_c);
             this.Name = "patient_app_cancel_panel";
             this.Size = new System.Drawing.Size(1011, 800);
+            this.Load += new System.EventHandler(this.patient_app_cancel_panel_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

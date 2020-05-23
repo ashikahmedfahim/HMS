@@ -36,6 +36,8 @@
             this.lbl_service_charge = new System.Windows.Forms.Label();
             this.lbl_room_charge = new System.Windows.Forms.Label();
             this.lbl_total_charge = new System.Windows.Forms.Label();
+            this.btn_refresh = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
             // label1
@@ -126,11 +128,25 @@
             this.lbl_total_charge.TabIndex = 4;
             this.lbl_total_charge.Text = "invalid";
             // 
+            // btn_refresh
+            // 
+            this.btn_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_refresh.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_refresh.ForeColor = System.Drawing.Color.White;
+            this.btn_refresh.Location = new System.Drawing.Point(411, 452);
+            this.btn_refresh.Name = "btn_refresh";
+            this.btn_refresh.Size = new System.Drawing.Size(125, 43);
+            this.btn_refresh.TabIndex = 5;
+            this.btn_refresh.Text = "Refresh";
+            this.btn_refresh.UseVisualStyleBackColor = true;
+            this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
+            // 
             // patient_bill_panel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
+            this.Controls.Add(this.btn_refresh);
             this.Controls.Add(this.lbl_total_charge);
             this.Controls.Add(this.lbl_room_charge);
             this.Controls.Add(this.lbl_service_charge);
@@ -157,5 +173,7 @@
         private System.Windows.Forms.Label lbl_service_charge;
         private System.Windows.Forms.Label lbl_room_charge;
         private System.Windows.Forms.Label lbl_total_charge;
+        private System.Windows.Forms.Button btn_refresh;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
