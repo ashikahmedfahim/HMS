@@ -101,14 +101,15 @@ namespace hp2
 
         private void btn_patient_logout_Click(object sender, EventArgs e)
         {
-            if (!Form1.Instance.PnlContainer.Controls.ContainsKey("login"))
-            {
-                login lgn = new login();
-                lgn.Dock = DockStyle.Fill;
-                Form1.Instance.PnlContainer.Controls.Add(lgn);
-            }
-            Form1.Instance.PnlContainer.Controls["login"].BringToFront();
-            load();
+            System.Windows.Forms.Application.ExitThread();
+            //if (!Form1.Instance.PnlContainer.Controls.ContainsKey("login"))
+            //{
+            //    login lgn = new login();
+            //    lgn.Dock = DockStyle.Fill;
+            //    Form1.Instance.PnlContainer.Controls.Add(lgn);
+            //}
+            //Form1.Instance.PnlContainer.Controls["login"].BringToFront();
+            //load();
         }
 
         private void btn_patient_bill_Click(object sender, EventArgs e)

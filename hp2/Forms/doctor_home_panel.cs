@@ -32,13 +32,14 @@ namespace hp2
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            if (!Form1.Instance.PnlContainer.Controls.ContainsKey("login"))
-            {
-                login lgn = new login();
-                lgn.Dock = DockStyle.Fill;
-                Form1.Instance.PnlContainer.Controls.Add(lgn);
-            }
-            Form1.Instance.PnlContainer.Controls["login"].BringToFront();
+            System.Windows.Forms.Application.ExitThread();
+            //if (!Form1.Instance.PnlContainer.Controls.ContainsKey("login"))
+            //{
+            //    login lgn = new login();
+            //    lgn.Dock = DockStyle.Fill;
+            //    Form1.Instance.PnlContainer.Controls.Add(lgn);
+            //}
+            //Form1.Instance.PnlContainer.Controls["login"].BringToFront();
         }
 
         private void doctor_home_panel_Load(object sender, EventArgs e)

@@ -85,7 +85,7 @@
             this.p_sub.Controls.Add(this.lbl_admin);
             this.p_sub.Dock = System.Windows.Forms.DockStyle.Left;
             this.p_sub.Location = new System.Drawing.Point(0, 0);
-            this.p_sub.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.p_sub.Margin = new System.Windows.Forms.Padding(2);
             this.p_sub.Name = "p_sub";
             this.p_sub.Size = new System.Drawing.Size(202, 650);
             this.p_sub.TabIndex = 1;
@@ -129,7 +129,7 @@
             this.btn_details.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_details.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_details.Location = new System.Drawing.Point(0, 0);
-            this.btn_details.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_details.Margin = new System.Windows.Forms.Padding(2);
             this.btn_details.Name = "btn_details";
             this.btn_details.Size = new System.Drawing.Size(202, 53);
             this.btn_details.TabIndex = 0;
@@ -142,7 +142,7 @@
             this.panel5.Controls.Add(this.btn_room);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 339);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(202, 53);
             this.panel5.TabIndex = 6;
@@ -154,7 +154,7 @@
             this.btn_room.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_room.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_room.Location = new System.Drawing.Point(0, 0);
-            this.btn_room.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_room.Margin = new System.Windows.Forms.Padding(2);
             this.btn_room.Name = "btn_room";
             this.btn_room.Size = new System.Drawing.Size(202, 53);
             this.btn_room.TabIndex = 0;
@@ -167,7 +167,7 @@
             this.panel4.Controls.Add(this.btn_service);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 286);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(202, 53);
             this.panel4.TabIndex = 5;
@@ -179,7 +179,7 @@
             this.btn_service.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_service.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_service.Location = new System.Drawing.Point(0, 0);
-            this.btn_service.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_service.Margin = new System.Windows.Forms.Padding(2);
             this.btn_service.Name = "btn_service";
             this.btn_service.Size = new System.Drawing.Size(202, 53);
             this.btn_service.TabIndex = 0;
@@ -192,7 +192,7 @@
             this.panel3.Controls.Add(this.btn_patient);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 233);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(202, 53);
             this.panel3.TabIndex = 4;
@@ -204,7 +204,7 @@
             this.btn_patient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_patient.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_patient.Location = new System.Drawing.Point(0, 0);
-            this.btn_patient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_patient.Margin = new System.Windows.Forms.Padding(2);
             this.btn_patient.Name = "btn_patient";
             this.btn_patient.Size = new System.Drawing.Size(202, 53);
             this.btn_patient.TabIndex = 0;
@@ -217,7 +217,7 @@
             this.panel2.Controls.Add(this.btn_doctor);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 180);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(202, 53);
             this.panel2.TabIndex = 3;
@@ -229,7 +229,7 @@
             this.btn_doctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_doctor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_doctor.Location = new System.Drawing.Point(0, 0);
-            this.btn_doctor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_doctor.Margin = new System.Windows.Forms.Padding(2);
             this.btn_doctor.Name = "btn_doctor";
             this.btn_doctor.Size = new System.Drawing.Size(202, 53);
             this.btn_doctor.TabIndex = 0;
@@ -242,7 +242,7 @@
             this.panel1.Controls.Add(this.btn_admin_home);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 127);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(202, 53);
             this.panel1.TabIndex = 2;
@@ -265,7 +265,7 @@
             // 
             this.p_none.Dock = System.Windows.Forms.DockStyle.Top;
             this.p_none.Location = new System.Drawing.Point(0, 35);
-            this.p_none.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.p_none.Margin = new System.Windows.Forms.Padding(2);
             this.p_none.Name = "p_none";
             this.p_none.Size = new System.Drawing.Size(202, 92);
             this.p_none.TabIndex = 1;
@@ -274,7 +274,7 @@
             // 
             this.panel_ad_right.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_ad_right.Location = new System.Drawing.Point(202, 0);
-            this.panel_ad_right.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_ad_right.Margin = new System.Windows.Forms.Padding(2);
             this.panel_ad_right.Name = "panel_ad_right";
             this.panel_ad_right.Size = new System.Drawing.Size(758, 650);
             this.panel_ad_right.TabIndex = 2;
@@ -287,7 +287,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
             this.Controls.Add(this.panel_ad_right);
             this.Controls.Add(this.p_sub);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "admin_panel";
             this.Size = new System.Drawing.Size(960, 650);
             this.Load += new System.EventHandler(this.admin_panel_Load);

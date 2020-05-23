@@ -76,7 +76,7 @@
             this.panel7.Controls.Add(this.btn_patient_logout);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 405);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(255, 65);
             this.panel7.TabIndex = 6;
@@ -89,7 +89,7 @@
             this.btn_patient_logout.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.btn_patient_logout.ForeColor = System.Drawing.Color.White;
             this.btn_patient_logout.Location = new System.Drawing.Point(0, 0);
-            this.btn_patient_logout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_patient_logout.Margin = new System.Windows.Forms.Padding(2);
             this.btn_patient_logout.Name = "btn_patient_logout";
             this.btn_patient_logout.Size = new System.Drawing.Size(255, 65);
             this.btn_patient_logout.TabIndex = 0;

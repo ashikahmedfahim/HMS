@@ -130,13 +130,14 @@ namespace hp2
 
         private void btn_logout_Click_1(object sender, EventArgs e)
         {
-            if (!Form1.Instance.PnlContainer.Controls.ContainsKey("login"))
-            {
-                login lg = new login();
-                lg.Dock = DockStyle.Fill;
-                Form1.Instance.PnlContainer.Controls.Add(lg);
-            }
-            Form1.Instance.PnlContainer.Controls["login"].BringToFront();
+            System.Windows.Forms.Application.ExitThread();
+            //if (!Form1.Instance.PnlContainer.Controls.ContainsKey("login"))
+            //{
+            //    login lg = new login();
+            //    lg.Dock = DockStyle.Fill;
+            //    Form1.Instance.PnlContainer.Controls.Add(lg);
+            //}
+            //Form1.Instance.PnlContainer.Controls["login"].BringToFront();
         }
     }
 }
