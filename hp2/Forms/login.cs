@@ -15,7 +15,8 @@ namespace hp2
     public partial class login : UserControl
     {
         DBAccess dbobj;
-        DataTable dtUsers; 
+        DataTable dtUsers;
+        private static string genUserId;
         public login()
         {
             InitializeComponent();
@@ -28,6 +29,17 @@ namespace hp2
             dbobj = new DBAccess();
             dtUsers = new DataTable();
         }
+
+        public static void setId(string x)
+        {
+            genUserId = x;
+        }
+
+        public static string getId()
+        {
+            return genUserId;
+        }
+        
 
         private void login_Load(object sender, EventArgs e)
         {

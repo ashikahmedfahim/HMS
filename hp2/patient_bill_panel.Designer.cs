@@ -45,9 +45,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(290, 209);
+            this.label1.Location = new System.Drawing.Point(228, 173);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 30);
+            this.label1.Size = new System.Drawing.Size(159, 22);
             this.label1.TabIndex = 3;
             this.label1.Text = "Doctor Charge :";
             // 
@@ -56,9 +57,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(300, 321);
+            this.label3.Location = new System.Drawing.Point(238, 265);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(195, 30);
+            this.label3.Size = new System.Drawing.Size(149, 22);
             this.label3.TabIndex = 3;
             this.label3.Text = "Room Charge :";
             // 
@@ -67,9 +69,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(314, 377);
+            this.label4.Location = new System.Drawing.Point(248, 312);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(181, 30);
+            this.label4.Size = new System.Drawing.Size(139, 22);
             this.label4.TabIndex = 3;
             this.label4.Text = "Total Charge :";
             // 
@@ -78,9 +81,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(283, 265);
+            this.label2.Location = new System.Drawing.Point(224, 218);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(212, 30);
+            this.label2.Size = new System.Drawing.Size(163, 22);
             this.label2.TabIndex = 3;
             this.label2.Text = "Service Charge :";
             // 
@@ -89,9 +93,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(501, 209);
+            this.label5.Location = new System.Drawing.Point(419, 173);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 30);
+            this.label5.Size = new System.Drawing.Size(43, 22);
             this.label5.TabIndex = 4;
             this.label5.Text = "500";
             // 
@@ -100,9 +105,10 @@
             this.lbl_service_charge.AutoSize = true;
             this.lbl_service_charge.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.lbl_service_charge.ForeColor = System.Drawing.Color.White;
-            this.lbl_service_charge.Location = new System.Drawing.Point(501, 266);
+            this.lbl_service_charge.Location = new System.Drawing.Point(419, 218);
+            this.lbl_service_charge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_service_charge.Name = "lbl_service_charge";
-            this.lbl_service_charge.Size = new System.Drawing.Size(93, 30);
+            this.lbl_service_charge.Size = new System.Drawing.Size(70, 22);
             this.lbl_service_charge.TabIndex = 4;
             this.lbl_service_charge.Text = "invalid";
             // 
@@ -111,9 +117,10 @@
             this.lbl_room_charge.AutoSize = true;
             this.lbl_room_charge.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.lbl_room_charge.ForeColor = System.Drawing.Color.White;
-            this.lbl_room_charge.Location = new System.Drawing.Point(501, 323);
+            this.lbl_room_charge.Location = new System.Drawing.Point(419, 265);
+            this.lbl_room_charge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_room_charge.Name = "lbl_room_charge";
-            this.lbl_room_charge.Size = new System.Drawing.Size(93, 30);
+            this.lbl_room_charge.Size = new System.Drawing.Size(70, 22);
             this.lbl_room_charge.TabIndex = 4;
             this.lbl_room_charge.Text = "invalid";
             // 
@@ -122,9 +129,10 @@
             this.lbl_total_charge.AutoSize = true;
             this.lbl_total_charge.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.lbl_total_charge.ForeColor = System.Drawing.Color.White;
-            this.lbl_total_charge.Location = new System.Drawing.Point(501, 380);
+            this.lbl_total_charge.Location = new System.Drawing.Point(419, 312);
+            this.lbl_total_charge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_total_charge.Name = "lbl_total_charge";
-            this.lbl_total_charge.Size = new System.Drawing.Size(93, 30);
+            this.lbl_total_charge.Size = new System.Drawing.Size(70, 22);
             this.lbl_total_charge.TabIndex = 4;
             this.lbl_total_charge.Text = "invalid";
             // 
@@ -133,9 +141,10 @@
             this.btn_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_refresh.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_refresh.ForeColor = System.Drawing.Color.White;
-            this.btn_refresh.Location = new System.Drawing.Point(411, 452);
+            this.btn_refresh.Location = new System.Drawing.Point(342, 389);
+            this.btn_refresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_refresh.Name = "btn_refresh";
-            this.btn_refresh.Size = new System.Drawing.Size(125, 43);
+            this.btn_refresh.Size = new System.Drawing.Size(94, 35);
             this.btn_refresh.TabIndex = 5;
             this.btn_refresh.Text = "Refresh";
             this.btn_refresh.UseVisualStyleBackColor = true;
@@ -143,7 +152,7 @@
             // 
             // patient_bill_panel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
             this.Controls.Add(this.btn_refresh);
@@ -155,8 +164,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "patient_bill_panel";
-            this.Size = new System.Drawing.Size(1010, 763);
+            this.Size = new System.Drawing.Size(758, 620);
             this.Load += new System.EventHandler(this.patient_bill_panel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
