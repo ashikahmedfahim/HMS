@@ -61,8 +61,9 @@
             this.TimeColumn});
             this.dataGridView2.Location = new System.Drawing.Point(53, 184);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(198, 395);
+            this.dataGridView2.Size = new System.Drawing.Size(143, 395);
             this.dataGridView2.TabIndex = 63;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
             // TimeColumn
             // 
@@ -88,7 +89,7 @@
             this.NameColumn});
             this.dataGridView1.Location = new System.Drawing.Point(378, 184);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(198, 395);
+            this.dataGridView1.Size = new System.Drawing.Size(142, 395);
             this.dataGridView1.TabIndex = 61;
             // 
             // NameColumn
@@ -118,6 +119,7 @@
             this.btnSearch.TabIndex = 59;
             this.btnSearch.Text = "Select";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // label4
             // 
