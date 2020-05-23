@@ -24,6 +24,9 @@ namespace hp2
         {
             dbobj = new DBAccess();
             dtUser3 = new DataTable();
+
+            cbox_patient_doc_name.Text = "";
+            cbox_patient_doc_time.Text = "";
             cbox_patient_doc_name.Items.Clear();
             cbox_patient_doc_time.Items.Clear();
             Customer_ID();
@@ -178,7 +181,7 @@ namespace hp2
         {
             dbobj = new DBAccess();
             dtUser = new DataTable();
-            string query4 = "SELECT ID FROM USER_INFO WHERE USER_ID = '" + user_id + "'";
+            string query4 = "SELECT ID FROM USER_INFO WHERE USER_ID = '" + login.getId() + "'";
             SqlDataReader select_info3 = dbobj.readDatathroughReader(query4);
             while (select_info3.Read())
             {

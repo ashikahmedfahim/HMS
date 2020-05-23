@@ -71,11 +71,11 @@
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(399, 387);
             this.dateTimePicker1.MaxDate = new System.DateTime(2020, 5, 28, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(2020, 5, 21, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(2020, 5, 23, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(393, 32);
             this.dateTimePicker1.TabIndex = 38;
-            this.dateTimePicker1.Value = new System.DateTime(2020, 5, 21, 0, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2020, 5, 23, 0, 0, 0, 0);
             // 
             // btn_patient_ap_delete
             // 
