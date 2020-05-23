@@ -80,6 +80,7 @@ namespace hp2
 
                 if (dtUsers.Rows.Count == 1)
                 {
+                    setId(user_id); 
                     dbobj.closeConn();
                     string result = txt_box_login_userid.Text.Substring(0, 1);
                     if (result == "a")

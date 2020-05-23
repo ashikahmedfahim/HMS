@@ -158,7 +158,7 @@ namespace hp2
                 id = select_info["CHARGE"].ToString();
             }
             dbobj.closeConn();
-            lbl_service_charge.Text = id;
+            //lbl_service_charge.Text = id;
         }
 
         public void R_charge()
@@ -173,7 +173,7 @@ namespace hp2
                 id2 = select_info2["CHARGE"].ToString();
             }
             dbobj.closeConn();
-            lbl_room_charge.Text = id2;
+            //lbl_room_charge.Text = id2;
 
         }
 
@@ -203,6 +203,8 @@ namespace hp2
             {
                 id4 = id2;
             }
+            lbl_service_charge.Text = id3;
+            lbl_room_charge.Text = id4;
             int total_charge = int.Parse(id3) + int.Parse(id4) + 500;
             lbl_total_charge.Text = total_charge.ToString();
         }
