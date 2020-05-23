@@ -15,9 +15,16 @@ namespace hp2
     {
         DBAccess dbobj;
         DataTable dtUser;
+        private string user_id;
         public patient__info_change()
         {
             InitializeComponent();
+        }
+
+        public patient__info_change(string x)
+        {
+            InitializeComponent();
+            user_id = x;
         }
 
         private void btn_back_Click(object sender, EventArgs e)
@@ -44,7 +51,7 @@ namespace hp2
             {
                 if (txtbox_new_address.Text != "")
                 {
-                    string query = "UPDATE USER_INFO  SET ADDRESS='" + txtbox_new_address.Text + "' WHERE USER_ID = '" + login.getId() + "'";
+                    string query = "UPDATE USER_INFO  SET ADDRESS='" + txtbox_new_address.Text + "' WHERE USER_ID = '" + user_id + "'";
                     SqlCommand updateCommand = new SqlCommand(query);
                     int res = dbobj.executeQuery(updateCommand);
                     //if (res == 1)
@@ -53,7 +60,7 @@ namespace hp2
                 }
                 if (txtxbox_new_phone_no.Text != "")
                 {
-                    string query = "UPDATE USER_INFO  SET PHONE='" + txtxbox_new_phone_no.Text + "' WHERE USER_ID = '" + login.getId() + "'";
+                    string query = "UPDATE USER_INFO  SET PHONE='" + txtxbox_new_phone_no.Text + "' WHERE USER_ID = '" + user_id + "'";
                     SqlCommand updateCommand = new SqlCommand(query);
                     int res = dbobj.executeQuery(updateCommand);
                     //if (res == 1)

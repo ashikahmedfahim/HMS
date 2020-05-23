@@ -17,15 +17,21 @@ namespace hp2
 
         DBAccess dbobj;
         DataTable dtUser;
+        private string user_id;
         public doctor_service_panel()
         {
             InitializeComponent();
+        }
+        public doctor_service_panel(string x)
+        {
+            InitializeComponent();
+            user_id = x;
         }
 
         private string getDoctorId() {
             DBAccess dbobjy = new DBAccess();
             DataTable  dtUsery = new DataTable();
-            string query = ("SELECT ID FROM USER_INFO WHERE USER_ID='"+login.getId()+"'");
+            string query = ("SELECT ID FROM USER_INFO WHERE USER_ID='"+user_id+"'");
             dbobjy.readDatathroughAdapter(query, dtUsery);
             if (dtUsery.Rows.Count == 1) {
                 return dtUsery.Rows[0]["ID"].ToString();

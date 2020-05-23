@@ -10,9 +10,11 @@ using System.Windows.Forms;
 
 namespace hp2
 {
+    
     public partial class doctor_panel : UserControl
     {
         static doctor_panel _obj3;
+        private string user_id;
 
         public static doctor_panel Instance_3
         {
@@ -35,6 +37,12 @@ namespace hp2
             InitializeComponent();
         }
 
+        public doctor_panel(string x)
+        {
+            InitializeComponent();
+            user_id = x;
+        }
+
         private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
         {
 
@@ -45,7 +53,7 @@ namespace hp2
 
             if (!doctor_panel.Instance_3.PnlContainer_3.Controls.ContainsKey("doctor_schedule_panel"))
             {
-                doctor_schedule_panel dsp = new doctor_schedule_panel();
+                doctor_schedule_panel dsp = new doctor_schedule_panel(user_id);
                 dsp.Dock = DockStyle.Fill;
                 doctor_panel.Instance_3.PnlContainer_3.Controls.Add(dsp);
             }
@@ -57,7 +65,7 @@ namespace hp2
         {
 
                 _obj3 = this;
-            doctor_home_panel dhp = new doctor_home_panel();
+            doctor_home_panel dhp = new doctor_home_panel(user_id);
                 dhp.Dock = DockStyle.Fill;
             doctor_panel_rightSide.Controls.Add(dhp);
             doctor_panel_rightSide.Controls["doctor_home_panel"].BringToFront();
@@ -77,7 +85,7 @@ namespace hp2
         private void button1_Click_1(object sender, EventArgs e)
         {
             _obj3 = this;
-            doctor_home_panel dhp = new doctor_home_panel();
+            doctor_home_panel dhp = new doctor_home_panel(user_id);
             dhp.Dock = DockStyle.Fill;
             doctor_panel_rightSide.Controls.Add(dhp);
             doctor_panel_rightSide.Controls["doctor_home_panel"].BringToFront();
@@ -87,7 +95,7 @@ namespace hp2
         private void update_but_Click(object sender, EventArgs e)
         {
             _obj3 = this;
-            doctor_update_panel dup = new doctor_update_panel();
+            doctor_update_panel dup = new doctor_update_panel(user_id);
             dup.Dock = DockStyle.Fill;
             doctor_panel_rightSide.Controls.Add(dup);
             doctor_panel_rightSide.Controls["doctor_update_panel"].BringToFront();
@@ -96,7 +104,7 @@ namespace hp2
         private void button1_Click_2(object sender, EventArgs e)
         {
             _obj3 = this;
-            doctor_schedule_panel dsp = new doctor_schedule_panel();
+            doctor_schedule_panel dsp = new doctor_schedule_panel(user_id);
             dsp.Dock = DockStyle.Fill;
             doctor_panel_rightSide.Controls.Add(dsp);
             doctor_panel_rightSide.Controls["doctor_schedule_panel"].BringToFront();
@@ -111,7 +119,7 @@ namespace hp2
         private void button2_Click(object sender, EventArgs e)
         {
             _obj3 = this;
-            doctor_service_panel dsp = new doctor_service_panel();
+            doctor_service_panel dsp = new doctor_service_panel(user_id);
             dsp.Dock = DockStyle.Fill;
             doctor_panel_rightSide.Controls.Add(dsp);
             doctor_panel_rightSide.Controls["doctor_service_panel"].BringToFront();

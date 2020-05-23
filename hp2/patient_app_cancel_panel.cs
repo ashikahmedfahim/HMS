@@ -16,6 +16,7 @@ namespace hp2
         DBAccess dbobj;
         DataTable dtUser, dtUser1, dtUser2,dtUser3,dtUser4;
         string time, dname, get_d_id, get_customer_id, get_time;
+        private string user_id;
         string a;
         string c, d, e, f, g, h, i, j;
         string doc;
@@ -60,6 +61,13 @@ namespace hp2
         public patient_app_cancel_panel()
         {
             InitializeComponent();
+        }
+
+        public patient_app_cancel_panel(string x)
+        {
+            InitializeComponent();
+            user_id = x;
+
         }
         public void timeselect()
         {
@@ -170,7 +178,7 @@ namespace hp2
         {
             dbobj = new DBAccess();
             dtUser = new DataTable();
-            string query4 = "SELECT ID FROM USER_INFO WHERE USER_ID = '" + login.getId() + "'";
+            string query4 = "SELECT ID FROM USER_INFO WHERE USER_ID = '" + user_id + "'";
             SqlDataReader select_info3 = dbobj.readDatathroughReader(query4);
             while (select_info3.Read())
             {

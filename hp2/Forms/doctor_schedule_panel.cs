@@ -19,10 +19,17 @@ namespace hp2
         private string getDid;
         private string[] getCid= new string[8];
         private string[] timeVal=new string[8];
+        private string user_id;
 
         public doctor_schedule_panel()
         {
             InitializeComponent();
+        }
+
+        public doctor_schedule_panel(string x)
+        {
+            InitializeComponent();
+            user_id = x;
         }
 
 
@@ -48,7 +55,7 @@ namespace hp2
         {
             DBAccess dbobjy = new DBAccess();
             DataTable dtUsery = new DataTable();
-            string query = ("SELECT ID FROM USER_INFO WHERE USER_ID='" + login.getId() + "'");
+            string query = ("SELECT ID FROM USER_INFO WHERE USER_ID='" + user_id + "'");
             dbobjy.readDatathroughAdapter(query, dtUsery);
             if (dtUsery.Rows.Count == 1)
             {
@@ -97,7 +104,7 @@ namespace hp2
             DataTable dtUser11 = new DataTable();
             dbobj = new DBAccess();
             dtUser = new DataTable();
-            string query2 = ("SELECT * FROM USER_INFO WHERE USER_ID = '" + login.getId() + "'");
+            string query2 = ("SELECT * FROM USER_INFO WHERE USER_ID = '" + user_id + "'");
             dbobj11.readDatathroughAdapter(query2, dtUser11);
             if (dtUser11.Rows.Count == 1)
             {

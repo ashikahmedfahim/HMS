@@ -15,10 +15,17 @@ namespace hp2
     {
         DBAccess dbobj;
         DataTable dtUser;
+        private string user_id;
 
         public patient_password_change()
         {
             InitializeComponent();
+        }
+
+        public patient_password_change(string x)
+        {
+            InitializeComponent();
+            user_id = x;
         }
 
         private void btn_back_Click(object sender, EventArgs e)
@@ -42,7 +49,7 @@ namespace hp2
             dtUser = new DataTable();
             dbobj.closeConn();
 
-            string query = "UPDATE USER_INFO  SET PASSWORD='" + txtbox_pass_change.Text + "' WHERE USER_ID = '" + login.getId() + "'";
+            string query = "UPDATE USER_INFO  SET PASSWORD='" + txtbox_pass_change.Text + "' WHERE USER_ID = '" + user_id + "'";
             SqlCommand updateCommand = new SqlCommand(query);
             int res = dbobj.executeQuery(updateCommand);
             if (res == 1)

@@ -58,6 +58,10 @@ namespace hp2
             {
                 MessageBox.Show("Please Enter All The Informations");
             }
+            else if (txt_box_phone.TextLength < 11)
+            {
+                MessageBox.Show("Please, Enter Valid Phone Number");
+            }
             else
             {
                 string result = txt_box_userid.Text.Substring(0, 1);
@@ -73,11 +77,10 @@ namespace hp2
                     int success = dbobj.executeQuery(insertCommand);
                     if (success == 1)
                     {
-                        login.setId(user_id);
                         MessageBox.Show("SignUp Successful");
                         if (!Form1.Instance.PnlContainer.Controls.ContainsKey("patient_panel"))
                         {
-                            patient_panel pp = new patient_panel();
+                            patient_panel pp = new patient_panel(user_id);
                             pp.Dock = DockStyle.Fill;
                             Form1.Instance.PnlContainer.Controls.Add(pp);
                         }

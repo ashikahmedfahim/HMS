@@ -14,6 +14,7 @@ namespace hp2
     public partial class patient_bill_panel: UserControl
     {
         string id,id2;
+        private string user_id;
         //// string user_id;
         //string name;
         //string phone;
@@ -25,12 +26,17 @@ namespace hp2
         {
             InitializeComponent();
         }
+        public patient_bill_panel(string x)
+        {
+            InitializeComponent();
+            user_id = x;
+        }
         public void Service_Charge()
         {
             dbobj = new DBAccess();
             dtUser = new DataTable();
             dbobj.closeConn();
-            string query = "select SUM(C.CHARGE)CHARGE from USER_INFO A,CUS_SER B,SERVICES C WHERE A.USER_ID= '" + login.getId() + "' AND A.ID=B.CID AND B.SID=C.ID";
+            string query = "select SUM(C.CHARGE)CHARGE from USER_INFO A,CUS_SER B,SERVICES C WHERE A.USER_ID= '" + user_id + "' AND A.ID=B.CID AND B.SID=C.ID";
             SqlDataReader select_info = dbobj.readDatathroughReader(query);
             while (select_info.Read())
             {
@@ -45,7 +51,7 @@ namespace hp2
             dbobj = new DBAccess();
             dtUser = new DataTable();
             dbobj.closeConn();
-            string query2 = "select SUM(C.CHARGE)CHARGE from USER_INFO A,CUS_ROOM B,ROOM C WHERE A.USER_ID= '" + login.getId() + "' AND A.ID=B.CID AND B.RID=C.ID";
+            string query2 = "select SUM(C.CHARGE)CHARGE from USER_INFO A,CUS_ROOM B,ROOM C WHERE A.USER_ID= '" + user_id + "' AND A.ID=B.CID AND B.RID=C.ID";
             SqlDataReader select_info2 = dbobj.readDatathroughReader(query2);
             while (select_info2.Read())
             {

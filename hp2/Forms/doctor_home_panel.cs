@@ -12,10 +12,17 @@ namespace hp2
 {
     public partial class doctor_home_panel : UserControl
     {
+        private string user_id;
         public doctor_home_panel()
         {
             InitializeComponent();
-            label1.Text = login.getId();
+        }
+
+        public doctor_home_panel(string x)
+        {
+            InitializeComponent();
+            user_id = x;
+            label1.Text = user_id;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -25,7 +32,6 @@ namespace hp2
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            login.setId("");
             if (!Form1.Instance.PnlContainer.Controls.ContainsKey("login"))
             {
                 login lgn = new login();
@@ -36,6 +42,11 @@ namespace hp2
         }
 
         private void doctor_home_panel_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

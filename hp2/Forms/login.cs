@@ -14,21 +14,14 @@ namespace hp2
 {
     public partial class login : UserControl
     {
-        private static string genUserId;
         DBAccess dbobj;
         DataTable dtUsers; 
         public login()
         {
             InitializeComponent();
+            txt_box_login_userid.Text = "";
+            txt_box_login_password.Text = "";
             loadData();
-        }
-
-        public static void setId(string x) {
-            genUserId = x;
-        }
-
-        public static string getId() {
-            return genUserId;
         }
 
         public void loadData() {
@@ -75,11 +68,8 @@ namespace hp2
 
                 if (dtUsers.Rows.Count == 1)
                 {
-                    setId(user_id);
                     dbobj.closeConn();
                     string result = txt_box_login_userid.Text.Substring(0, 1);
-                    txt_box_login_userid.Text = "";
-                    txt_box_login_password.Text = "";
                     if (result == "a")
                     {
                         if (!Form1.Instance.PnlContainer.Controls.ContainsKey("admin_panel"))
@@ -96,11 +86,13 @@ namespace hp2
                     {
                         if (!Form1.Instance.PnlContainer.Controls.ContainsKey("patient_panel"))
                         {
-                            patient_panel pp = new patient_panel(user_id);
+                            patient_panel pp = new patient_panel(txt_box_login_userid.Text);
                             pp.Dock = DockStyle.Fill;
                             Form1.Instance.PnlContainer.Controls.Add(pp);
                         }
                         Form1.Instance.PnlContainer.Controls["patient_panel"].BringToFront();
+                        txt_box_login_userid.Text = "";
+                        txt_box_login_password.Text = "";
 
                     }
 
@@ -108,11 +100,13 @@ namespace hp2
                     {
                         if (!Form1.Instance.PnlContainer.Controls.ContainsKey("doctor_panel"))
                         {
-                            doctor_panel dp = new doctor_panel();
+                            doctor_panel dp = new doctor_panel(txt_box_login_userid.Text);
                             dp.Dock = DockStyle.Fill;
                             Form1.Instance.PnlContainer.Controls.Add(dp);
                         }
                         Form1.Instance.PnlContainer.Controls["doctor_panel"].BringToFront();
+                        txt_box_login_userid.Text = "";
+                        txt_box_login_password.Text = "";
                     }
 
                 }
@@ -158,6 +152,17 @@ namespace hp2
         {
             btn_cancel_login.BackColor = Color.White;
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (!Form1.Instance.PnlContainer.Controls.ContainsKey("Forget_pass_panel"))
+            {
+                Forget_pass_panel fpp = new Forget_pass_panel();
+                fpp.Dock = DockStyle.Fill;
+                Form1.Instance.PnlContainer.Controls.Add(fpp);
+            }
+            Form1.Instance.PnlContainer.Controls["Forget_pass_panel"].BringToFront();
         }
     }
 }

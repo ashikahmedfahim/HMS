@@ -16,9 +16,16 @@ namespace hp2
         DBAccess dbobj;
         DataTable dtUser;
         string id;
+        private string user_id;
         public patient_service_panel()
         {
             InitializeComponent();
+        }
+
+        public patient_service_panel(string x)
+        {
+            InitializeComponent();
+            user_id = x;
         }
 
         private void btn_info_1_Click(object sender, EventArgs e)
@@ -34,7 +41,7 @@ namespace hp2
         {
             dbobj = new DBAccess();
             dtUser = new DataTable();
-            string query = ("SELECT C.NAME FROM USER_INFO A ,CUS_SER B,SERVICES C WHERE A.USER_ID= '" + login.getId() + "' AND A.ID=B.CID AND B.SID=C.ID");
+            string query = ("SELECT C.NAME FROM USER_INFO A ,CUS_SER B,SERVICES C WHERE A.USER_ID= '" + user_id + "' AND A.ID=B.CID AND B.SID=C.ID");
             dbobj.readDatathroughAdapter(query, dtUser);
             foreach (DataRow dr in dtUser.Rows)
             {

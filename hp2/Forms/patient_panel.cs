@@ -60,7 +60,7 @@ namespace hp2
 
             if (!patient_panel.Instance_4.PnlContainer_4.Controls.ContainsKey("patient_appointment_panel"))
             {
-                patient_appointment_panel p_a_p = new patient_appointment_panel();
+                patient_appointment_panel p_a_p = new patient_appointment_panel(id);
                 p_a_p.Dock = DockStyle.Fill;
                 patient_panel.Instance_4.PnlContainer_4.Controls.Add(p_a_p);
             }
@@ -73,7 +73,7 @@ namespace hp2
 
             if (!patient_panel.Instance_4.PnlContainer_4.Controls.ContainsKey("patient_service_panel"))
             {
-                patient_service_panel p_s_p = new patient_service_panel();
+                patient_service_panel p_s_p = new patient_service_panel(id);
                 p_s_p.Dock = DockStyle.Fill;
                 patient_panel.Instance_4.PnlContainer_4.Controls.Add(p_s_p);
             }
@@ -115,7 +115,7 @@ namespace hp2
         {
             if (!patient_panel.Instance_4.PnlContainer_4.Controls.ContainsKey("patient_bill_panel"))
             {
-                patient_bill_panel p_b_p = new patient_bill_panel();
+                patient_bill_panel p_b_p = new patient_bill_panel(id);
                 p_b_p.Dock = DockStyle.Fill;
                 patient_panel.Instance_4.PnlContainer_4.Controls.Add(p_b_p);
             }
